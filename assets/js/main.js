@@ -298,6 +298,8 @@
 							if(location.hash == "#work-pixelate"){
 
 								location.hash = '#work';
+							} else if(location.hash == "#work-tvworld"){
+								location.hash = "#work";
 							} else {
 								location.hash = '';
 							}
@@ -317,6 +319,8 @@
 					if ($body.hasClass('is-article-visible')){
 							var $this = $(this);
 							if(location.hash == "#work-pixelate"){
+								location.hash = "#work";
+							} else if(location.hash == "#work-tvworld"){
 								location.hash = "#work";
 							} else {
 								$main._hide(true);
