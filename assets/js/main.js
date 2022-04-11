@@ -295,7 +295,14 @@
 					$('<div class="close">Close</div>')
 						.appendTo($this)
 						.on('click', function() {
-							location.hash = '';
+							if(location.hash == "#work-pixelate"){
+
+								location.hash = '#work';
+							} else if(location.hash == "#work-tvworld"){
+								location.hash = "#work";
+							} else {
+								location.hash = '';
+							}
 						});
 
 				// Prevent clicks from inside article from bubbling.
@@ -309,8 +316,16 @@
 			$body.on('click', function(event) {
 
 				// Article visible? Hide.
-					if ($body.hasClass('is-article-visible'))
-						$main._hide(true);
+					if ($body.hasClass('is-article-visible')){
+							var $this = $(this);
+							if(location.hash == "#work-pixelate"){
+								location.hash = "#work";
+							} else if(location.hash == "#work-tvworld"){
+								location.hash = "#work";
+							} else {
+								$main._hide(true);
+							}
+					}
 
 			});
 
