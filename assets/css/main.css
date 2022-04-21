@@ -1107,6 +1107,11 @@ input, select, textarea {
 
 /* BG */
 
+	:root{
+		--pseudo-bgimg: url("../../images/bg.jpg");
+		--pseudo-bgimg-back: url("../../images/bg2.jpg");
+	}
+
 	#bg {
 		-moz-transform: scale(1.0);
 		-webkit-transform: scale(1.0);
@@ -1120,6 +1125,7 @@ input, select, textarea {
 		height: 100vh;
 		z-index: 1;
 	}
+
 
 		#bg:before, #bg:after {
 			content: '';
@@ -1141,9 +1147,12 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto, 256px 256px;
-			background-position: center, center;
-			background-repeat: no-repeat, repeat;
+			background-size: auto,
+ 256px 256px;
+			background-position: center,
+ center;
+			background-repeat: no-repeat,
+ repeat;
 			z-index: 2;
 		}
 
@@ -1152,11 +1161,14 @@ input, select, textarea {
 			-webkit-transform: scale(1.125);
 			-ms-transform: scale(1.125);
 			transform: scale(1.125);
+			
+
 			-moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
 			-webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
 			-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
+
 			transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-			background-image: url("../../images/bg.jpg");
+			background-image: var(--pseudo-bgimg);
 			background-position: center;
 			background-size: cover;
 			background-repeat: no-repeat;
@@ -1172,10 +1184,27 @@ input, select, textarea {
 			-webkit-filter: blur(0.2rem);
 			-ms-filter: blur(0.2rem);
 			filter: blur(0.2rem);
+
+
+		
+
+			background-color: #000000FF;
+		}
+
+		body.is-article-t #bg:before {
+
+			-moz-transition:  background-color 1.0s ease-in-out;
+			-webkit-transition: background-color 1.0s ease-in-out;
+			-ms-transition:  background-color 1.0s ease-in-out;
+
+			transition: background-color 1.0s ease-in-out;
+
+
+			background-color: #000000FF;
 		}
 
 		body.is-preload #bg:before {
-			background-color: #000000;
+			background-color: #000000FF
 		}
 
 /* Wrapper */
@@ -1695,3 +1724,19 @@ input, select, textarea {
     width: 30%;
     height: 30%;
 }
+
+#videosList {
+	 overflow: hidden;
+   }
+   
+   .video {
+	 background-image: '';
+	 width: 100%;
+	 height: 100%;
+	 
+   }
+   
+   /* Hide Play button + controls on iOS */
+   video::-webkit-media-controls {
+	   display:none !important;
+   }

@@ -77,9 +77,7 @@
 						<!-- Work -->
 							<article id="work">
 							<h1 style="text-align: center"><u>Work</u></h1>
-							<br>
-							<br>
-							<br>
+							<h6 style="text-align: center">Click on the images or text to view that specific project</h6>
 
 								<!-- <div class="field">
 									<label for="work-filter">Filter</label>
@@ -97,31 +95,31 @@
 									<div class="first">
 										<div style="text-align: center">
 											<h2><a href="#work-pixelate">Pixelate</a></h2>
-											<span class="image main"><a href="#work-pixelate"><img src="images/pixelate-preview-shrunk.jpg"onmouseout="this.src='images/pixelate-preview-shrunk.jpg';" onmouseover="this.src='images/pixelate-preview-shrunk-sel.jpg';"></p></span></a>
+											<span class="image main"><a href="#work-pixelate"><img src="images/work/pixelate-preview-shrunk.jpg"onmouseout="this.src='images/work/pixelate-preview-shrunk.jpg';" onmouseover="this.src='images/work/pixelate-preview-shrunk-sel.jpg';"></p></span></a>
 										</div>
 
 									</div>
 									<div class="second">
 										<div style="text-align: center">
 											<h2><a href="#work-tvworld">TV-World</a></h2>
-											<span class="image main"><a href="#work-tvworld"><img src="images/tvworld-preview.jpg" onmouseout="this.src='images/tvworld-preview.jpg';" onmouseover="this.src='images/tvworld-preview-sel.jpg';"></p></span></a>
+											<span class="image main"><a href="#work-tvworld"><img src="images/work/tvworld-preview.jpg" onmouseout="this.src='images/work/tvworld-preview.jpg';" onmouseover="this.src='images/work/tvworld-preview-sel.jpg';"></p></span></a>
 										</div>
 
 									</div>
 
-									<!-- <div class="second">
+									<div class="second">
+										
 										<div style="text-align: center">
 											<h2><a href="#work-pacman">Pacman</a></h2>
-											<span class="image main"><a href="#work-pacman"><img src="images/tvworld-preview.jpg" onmouseover="this.src='images/home-g.png';"></p></span></a>
+											<span class="image main"><a href="#work-pacman"><img src="images/work/pacman-preview.jpg" onclick="" onmouseout="this.src='images/work/pacman-preview.jpg';" onmouseover="this.src='images/work/pacman-preview-sel.jpg';"></p></span></a>
 										</div>
-
-									</div> -->
-								</div>
+									</div>
 							</article>
 
 						<!-- WorkPieces -->
 						<article id="work-pixelate">
 						<h1  style="text-align: center">Pixelate</h1>
+						<h6  style="text-align: center">(Project is under development and not final)</h6>
 						<!-- <p>Insert video here.</p> -->
 						<p>Pixelate is a game engine that is used to create 2D games. This project is still in development with the hopes of one day creating games with Pixelate. Currently Pixelate is being developed for desktop PC platforms with hopes to support other platforms in the future.</p>
 						<h3><u>Some notes about the project</u></h3>
@@ -176,6 +174,61 @@
 							<div class="second">
 								<div style="text-align: center">
 									<a href="https://hech11.itch.io/tv-world" class="button">View itch.io page</a>
+								</div>
+							</div>
+							<div class="first">
+								<div style="text-align: center">
+									<a href="#work" class="button">Go back</a>
+								</div>
+
+							</div>
+						</div>
+
+					</article>
+
+					<article id="work-pacman">
+						<script>
+
+						</script>
+
+						<h1 style="text-align: center">Pacman</h1>
+						<div style="display:block;  margin:auto;" id="ytplayer">
+
+							<script>
+							  	var tag = document.createElement('script');
+						  		tag.src = "https://www.youtube.com/player_api";
+						  		var firstScriptTag = document.getElementsByTagName('script')[0];
+						  		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+								
+						  		var player;
+						  		function onYouTubePlayerAPIReady() {
+										player = new YT.Player('ytplayer', {
+							  			height: '240',
+							  			width: '426',
+							  			videoId: '6tPc_s5UMmA'
+									});
+						  		}
+							</script>
+																		
+						
+						</div>
+
+						<p>For my first assignment in University, I created Pacman in C++. The aim was to try and recreate Pacman as close as I can while implementing my own ideas to the game.</p>
+						<h3><u>Some notes about the project</u></h3>
+						<ul>
+						<li>Made in entirely in C++. A library was provided by the University to help input/output graphics and audio</li>
+						<li>Includes an ECS system that was programmed by me.</li>
+						<li>Includes a physics system that was programmed by me.</li>
+						<li>Ghost AI was recreated as close as possible to the original arcade game.</li>
+						<li>Infinite levels, with each level being more challanging than the previous.</li>
+						<li>This game has a local highscore table implemented.</li>
+						</ul>
+
+
+						<div class="container">
+							<div class="second">
+								<div style="text-align: center">
+									<a href="https://github.com/hech11/SorryCannotViewCode" class="button">View Github page</a>
 								</div>
 							</div>
 							<div class="first">
@@ -473,7 +526,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</div>
 
 		<!-- BG -->
-			<div id="bg"></div>
+			<div id="bg">
+			</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

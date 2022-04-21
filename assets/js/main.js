@@ -4,6 +4,47 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+// hovering over video
+var cip = $(".video").hover( hoverVideo, hideVideo );
+
+function hoverVideo(e) {  
+    $('video', this).get(0).play(); 
+}
+
+function hideVideo(e) {
+    $('video', this).get(0).pause(); 
+}
+
+function setStyles(element, styles)
+{
+    for(var s in styles) {
+        element.style[s] = styles[s];
+    }
+}
+
+function changeBGImage(imgPath)
+{
+	if(imgPath == 0)
+	{
+		document.querySelector(':root').style.setProperty('--pseudo-bgimg',  'url("../../images/bg.jpg")');
+	} else if(imgPath == 1)
+	{
+		document.querySelector(':root').style.setProperty('--pseudo-bgimg',  'url("../../images/bg2.jpg")');
+	}
+	else if(imgPath == 2)
+	{
+		document.querySelector(':root').style.setProperty('--pseudo-bgimg',  'url("../../images/work/pixelate-preview-shrunk.jpg")');
+	}
+	else if(imgPath == 3)
+	{
+		document.querySelector(':root').style.setProperty('--pseudo-bgimg',  'url("../../images/work/tvworld-preview.jpg")');
+	}
+	else if(imgPath == 4)
+	{
+		document.querySelector(':root').style.setProperty('--pseudo-bgimg',  'url("../../images/work/pacman-preview.jpg")');
+	}
+}
+
 (function($) {
 
 	var	$window = $(window),
@@ -74,6 +115,7 @@
 
 				var $article = $main_articles.filter('#' + id);
 
+
 				// No such article? Bail.
 					if ($article.length == 0)
 						return;
@@ -86,12 +128,34 @@
 							// Mark as switching.
 								$body.addClass('is-switching');
 
+
 							// Mark as visible.
 								$body.addClass('is-article-visible');
+								if(id != "" && id != "work" && id != "skills" && id != "about" && id != "contact")
+								{
+									$body.addClass('is-article-t');
+									
+									setTimeout(function() {
+										$body.removeClass('is-article-t');
+										if(id == "work-pixelate")
+										{
+											changeBGImage(2);
+										}
+										else if(id == "work-tvworld")
+										{
+											changeBGImage(3);
+										}
+										else if(id == "work-pacman")
+										{
+											changeBGImage(4);
+										}
+									}, 1200);
+								}
+
 
 							// Deactivate all articles (just in case one's already active).
 								$main_articles.removeClass('active');
-
+			
 							// Hide header, footer.
 								$header.hide();
 								$footer.hide();
@@ -99,6 +163,8 @@
 							// Show main, article.
 								$main.show();
 								$article.show();
+								//$body.addClass('is-article-t');
+
 
 							// Activate article.
 								$article.addClass('active');
@@ -109,7 +175,10 @@
 							// Unmark as switching.
 								setTimeout(function() {
 									$body.removeClass('is-switching');
+
 								}, (initial ? 1000 : 0));
+
+
 
 							return;
 
@@ -123,6 +192,28 @@
 
 						// Deactivate current article.
 							var $currentArticle = $main_articles.filter('.active');
+							if(id != "" && id != "work" && id != "skills" && id != "about" && id != "contact")
+							{
+								$body.addClass('is-article-t');
+								
+								setTimeout(function() {
+									$body.removeClass('is-article-t');
+									if(id == "work-pixelate")
+									{
+										changeBGImage(2);
+									}
+									else if(id == "work-tvworld")
+									{
+										changeBGImage(3);
+									}
+									else if(id == "work-pacman")
+									{
+										changeBGImage(4);
+									}
+								}, 1200);
+							}
+
+							
 
 							$currentArticle.removeClass('active');
 
@@ -134,6 +225,7 @@
 
 								// Show article.
 									$article.show();
+									
 
 								// Activate article.
 									setTimeout(function() {
@@ -160,17 +252,36 @@
 					else {
 
 						// Mark as visible.
-							$body
-								.addClass('is-article-visible');
-
-						// Show article.
-							setTimeout(function() {
-
-								// Hide header, footer.
+							$body.addClass('is-article-visible');
+							if(id != "" && id != "work" && id != "skills" && id != "about" && id != "contact")
+							{
+								$body.addClass('is-article-t');
+								
+								setTimeout(function() {
+									$body.removeClass('is-article-t');
+									if(id == "work-pixelate")
+									{
+										changeBGImage(2);
+									}
+									else if(id == "work-tvworld")
+									{
+										changeBGImage(3);
+									}
+									else if(id == "work-pacman")
+									{
+										changeBGImage(4);
+									}
+								}, 1200);
+							}
+								
+								// Show article.
+								setTimeout(function() {
+									
+									// Hide header, footer.
 									$header.hide();
 									$footer.hide();
-
-								// Show main, article.
+									
+									// Show main, article.
 									$main.show();
 									$article.show();
 
@@ -178,6 +289,7 @@
 									setTimeout(function() {
 
 										$article.addClass('active');
+
 
 										// Window stuff.
 											$window
@@ -209,6 +321,7 @@
 					if (typeof addState != 'undefined'
 					&&	addState === true)
 						history.pushState(null, null, '#');
+
 
 				// Handle lock.
 
@@ -300,8 +413,22 @@
 								location.hash = '#work';
 							} else if(location.hash == "#work-tvworld"){
 								location.hash = "#work";
+							} else if(location.hash == "#work-pacman"){
+								location.hash = "#work";
 							} else {
+
+								if(location.hash != "#about" && location.hash != "#skills" && location.hash != "#contacts")
+								{
+									$body.addClass('is-article-t');
+									
+									setTimeout(function() {
+										$body.removeClass('is-article-t');
+										changeBGImage(0);
+									}, 1200);
+								}
 								location.hash = '';
+
+								
 							}
 						});
 
@@ -322,8 +449,23 @@
 								location.hash = "#work";
 							} else if(location.hash == "#work-tvworld"){
 								location.hash = "#work";
+							} else if(location.hash == "#work-pacman"){
+								location.hash = "#work";
 							} else {
+								
+								
 								$main._hide(true);
+								if(location.hash != "#about" && location.hash != "#skills" && location.hash != "#contacts")
+								{
+									$body.addClass('is-article-t');
+									
+									setTimeout(function() {
+										$body.removeClass('is-article-t');
+										changeBGImage(0);
+									}, 1200);
+								}
+
+
 							}
 					}
 
@@ -331,20 +473,7 @@
 
 			$window.on('keyup', function(event) {
 
-				switch (event.keyCode) {
 
-					case 27:
-
-						// Article visible? Hide.
-							if ($body.hasClass('is-article-visible'))
-								$main._hide(true);
-
-						break;
-
-					default:
-						break;
-
-				}
 
 			});
 
@@ -413,4 +542,6 @@
 						$main._show(location.hash.substr(1), true);
 					});
 
+
+		
 })(jQuery);
