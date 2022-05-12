@@ -76,44 +76,50 @@
 
 						<!-- Work -->
 							<article id="work">
+
 							<h1 style="text-align: center"><u>Work</u></h1>
 							<h6 style="text-align: center">Click on the images or text to view that specific project</h6>
-
-								<!--- <div class="field">
-									<label for="work-filter">Filter</label>
-									<select name="work-filter" id="work-filter">
-										<option value="1">Code</option>
-										<option value="2">Engines</option>
-										<option value="3">All</option>
-									</select>
-								</div> -->
-
-
-								
 
 								<div class="container">
 									<div class="first">
 										<div style="text-align: center">
-											<h2><a href="#work-pixelate">Pixelate</a></h2>
+											<h3><a href="#work-pixelate">Pixelate</a></h3>
 											<span class="image main"><a href="#work-pixelate"><img src="images/work/pixelate-preview-shrunk.jpg"onmouseout="this.src='images/work/pixelate-preview-shrunk.jpg';" onmouseover="this.src='images/work/pixelate-preview-shrunk-sel.jpg';"></p></span></a>
 										</div>
-
 									</div>
+
 									<div class="second">
 										<div style="text-align: center">
-											<h2><a href="#work-tvworld">TV-World</a></h2>
+											<h3><a href="#work-tvworld">TV-World</a></h3>
 											<span class="image main"><a href="#work-tvworld"><img src="images/work/tvworld-preview.jpg" onmouseout="this.src='images/work/tvworld-preview.jpg';" onmouseover="this.src='images/work/tvworld-preview-sel.jpg';"></p></span></a>
 										</div>
 
 									</div>
 
-									<div class="second">
+									<div class="first">
 										
 										<div style="text-align: center">
-											<h2><a href="#work-pacman">Pacman</a></h2>
+											<h3><a href="#work-pacman">Pacman</a></h3>
 											<span class="image main"><a href="#work-pacman"><img src="images/work/pacman-preview.jpg" onclick="" onmouseout="this.src='images/work/pacman-preview.jpg';" onmouseover="this.src='images/work/pacman-preview-sel.jpg';"></p></span></a>
 										</div>
 									</div>
+
+									<div class="second">
+										
+										<div style="text-align: center">
+											<h3><a href="#work-mbarcade">Mario Bros Arcade</a></h3>
+											<span class="image main"><a href="#work-mbarcade"><img src="images/work/mbarcade-preview.png" onclick="" onmouseout="this.src='images/work/mbarcade-preview.png';" onmouseover="this.src='images/work/mbarcade-preview-sel.png';"></p></span></a>
+										</div>
+									</div>
+
+									<div class="first">
+										<div style="text-align: center">
+											<h3><a href="#work-gl1">OpenGL 1.1 app</a></h3>
+											<span class="image main"><a href="#work-gl1"><img src="images/work/gl1-preview.png" onclick="" onmouseout="this.src='images/work/gl1-preview.png';" onmouseover="this.src='images/work/gl1-preview-sel.png';"></p></span></a>
+										</div>
+									</div>
+
+								</div>
 							</article>
 
 						<!-- WorkPieces -->
@@ -217,6 +223,98 @@
 						<li>Ghost AI was recreated as close as possible to the original arcade game.</li>
 						<li>Infinite levels, with each level being more challanging than the previous.</li>
 						<li>This game has a local highscore table implemented.</li>
+						</ul>
+
+
+						<div class="container">
+							<div class="second">
+								<div style="text-align: center">
+									<a href="https://github.com/hech11/SorryCannotViewCode" class="button">View Github page</a>
+								</div>
+							</div>
+							<div class="first">
+								<div style="text-align: center">
+									<a href="#work" class="button">Go back</a>
+								</div>
+
+							</div>
+						</div>
+
+					</article>
+
+					<article id="work-mbarcade">
+						<script>
+
+						</script>
+
+						<h1 style="text-align: center">Mario Bros</h1>
+
+
+						<div style="text-align: center; display:block;  margin:auto;" >
+							<iframe width="426" height="240"
+								src="https://www.youtube.com/embed/6tPc_s5UMmA">
+							</iframe> 
+						</div> 
+
+
+						<p>For an assignment for University, I recreated an OpenGL sandbox application. The version of OpenGL used was 1.1.</p>
+						<h3><u>Some notes about the project</u></h3>
+						<ul>
+						<li>Made in C++.</li>
+						<li>A 2D renderer.</li>
+						<li>Can load and play audio.</li>
+						<li>A 2D physics system.</li>
+						<li>An ECS system (sparse).</li>
+						<li>A custom texted based serializer.</li>
+						<li>A Editor with a moving camera and a prefab placement system.</li>
+						<li>Can load .TTF files for fonts.</li>
+						<li>Recreated most elements and gameplay mechanics from Mario Aracde including infinite levels..</li>
+						</ul>
+
+
+						<div class="container">
+							<div class="second">
+								<div style="text-align: center">
+									<a href="https://github.com/hech11/SorryCannotViewCode" class="button">View Github page</a>
+								</div>
+							</div>
+							<div class="first">
+								<div style="text-align: center">
+									<a href="#work" class="button">Go back</a>
+								</div>
+
+							</div>
+						</div>
+
+					</article>
+
+
+					<article id="work-gl1">
+						<script>
+
+						</script>
+
+						<h1 style="text-align: center">OpenGL 1.1 Sandbox Application</h1>
+
+
+						<div style="text-align: center; display:block;  margin:auto;" >
+							<iframe width="426" height="240"
+								src="https://www.youtube.com/embed/6tPc_s5UMmA">
+							</iframe> 
+						</div> 
+
+
+						<p>For an assignment for University, I created an OpenGL sandbox application. The version of OpenGL used was 1.1.</p>
+						<h3><u>Some notes about the project</u></h3>
+						<ul>
+						<li>Made in C++.</li>
+						<li>Includes an ECS system that was programmed by me.</li>
+						<li>Only OpenGL 1.1 was used to create everything.</li>
+						<li>Programmed an OBJ loader.</li>
+						<li>Skyboxes are implemented.</li>
+						<li>Dynamic lighting is programmed.</li>
+						<li>Can dynamically load any model, texture or material within the editor.</li>
+						<li>Can load .TTF files for fonts.</li>
 						</ul>
 
 

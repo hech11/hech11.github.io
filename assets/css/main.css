@@ -1696,14 +1696,18 @@ input, select, textarea {
 
 .first {
     float: left;
+	position: initial;
     width: 50%;
-    height: 50%;
+    height: 25%;
+
 }
 
 .second{
-    float: left;
+    float: right;
+	position: initial;
     width: 50%;
-    height: 50%;
+    height: 25%;
+	
 }
 
 
