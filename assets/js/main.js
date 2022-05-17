@@ -43,6 +43,14 @@ function changeBGImage(imgPath)
 	{
 		document.querySelector(':root').style.setProperty('--pseudo-bgimg',  'url("../../images/work/pacman-preview.jpg")');
 	}
+	else if(imgPath == 5)
+	{
+		document.querySelector(':root').style.setProperty('--pseudo-bgimg',  'url("../../images/work/mbarcade-preview.png")');
+	}
+	else if(imgPath == 6)
+	{
+		document.querySelector(':root').style.setProperty('--pseudo-bgimg',  'url("../../images/work/gl1-preview.png")');
+	}
 }
 
 (function($) {
@@ -149,6 +157,14 @@ function changeBGImage(imgPath)
 										{
 											changeBGImage(4);
 										}
+										else if(id == "work-mbarcade")
+										{
+											changeBGImage(5);
+										}
+										else if(id == "work-gl1")
+										{
+											changeBGImage(6);
+										}
 									}, 1200);
 								}
 
@@ -210,6 +226,14 @@ function changeBGImage(imgPath)
 									{
 										changeBGImage(4);
 									}
+									else if(id == "work-mbarcade")
+									{
+										changeBGImage(5);
+									}
+									else if(id == "work-gl1")
+									{
+										changeBGImage(6);
+									}
 								}, 1200);
 							}
 
@@ -270,6 +294,14 @@ function changeBGImage(imgPath)
 									else if(id == "work-pacman")
 									{
 										changeBGImage(4);
+									}
+									else if(id == "work-mbarcade")
+									{
+										changeBGImage(5);
+									}
+									else if(id == "work-gl1")
+									{
+										changeBGImage(6);
 									}
 								}, 1200);
 							}
