@@ -415,6 +415,12 @@ function changeBGImage(imgPath)
 								location.hash = "#work";
 							} else if(location.hash == "#work-pacman"){
 								location.hash = "#work";
+							} 
+							else if(location.hash == "#work-mbarcade"){
+								location.hash = "#work";
+							}
+							else if(location.hash == "#work-gl1"){
+								location.hash = "#work";
 							} else {
 
 								if(location.hash != "#about" && location.hash != "#skills" && location.hash != "#contacts")
@@ -450,6 +456,12 @@ function changeBGImage(imgPath)
 							} else if(location.hash == "#work-tvworld"){
 								location.hash = "#work";
 							} else if(location.hash == "#work-pacman"){
+								location.hash = "#work";
+							}
+							else if(location.hash == "#work-mbarcade"){
+								location.hash = "#work";
+							}
+							else if(location.hash == "#work-gl1"){
 								location.hash = "#work";
 							} else {
 								
