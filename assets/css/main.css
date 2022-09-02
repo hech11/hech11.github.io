@@ -92,7 +92,7 @@ input, select, textarea {
 
 	}
 	:root{
-		--pseudo-bgimg: url("../../images/bg.jpg");
+		--pseudo-bgimg: url("../../images/code-example.jpg");
 	}
 	html {
 		box-sizing: border-box;
