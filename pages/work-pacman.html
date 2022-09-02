@@ -58,9 +58,29 @@
 
 									<div class="box alt">
 										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="../images/work/pacman-preview.jpg" alt="" /></span></div>
+											<div class="col-12"><span class="image fit"><img src="../images/work/pacman/pacman-preview3.jpg" name="edit-save" alt="" /></span></div>
 										</div>
+										<ul class="pagination" style="text-align: center;">
+											<li><span id="backButtonSmall" onclick="IncrementPageCounter(false)" class="button small disabled">Prev</span></a></li>
+											<li><div id="demo"></div></li>
+											<li><span id="nextButtonSmall" onclick="IncrementPageCounter(true)" class="button small">Next</span></a></li>
+										</ul>
+										
 									</div>
+									<script>
+										window.onload = function() {
+   										 	InitPaginate(ThumbnailImgs);
+										};
+
+										const ThumbnailImgs = [
+											"../images/work/pacman/pacman-preview3.jpg",
+											"../images/work/pacman-preview.jpg",
+											"../images/work/pacman/pacman-preview2.jpg",
+											"../images/work/pacman/pacman-preview4.jpg",
+											"../images/work/pacman/pacman-preview5.jpg",
+											"../images/work/pacman/pacman-preview6.jpg",
+										]
+									</script>
 									<ul class="actions fit">
 										<li><a href="https://github.com/hech11/SorryCannotViewCode" class="button fit">View Github page</a></li>
 										<li><a href="https://www.youtube.com/embed/6tPc_s5UMmA" class="button fit">View Video</a></li>
@@ -97,6 +117,7 @@
 
 			</div>
 		<!-- Scripts -->
+			<script src="../assets/js/AutoPaginate.js"></script>
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.scrollex.min.js"></script>
 			<script src="../assets/js/browser.min.js"></script>

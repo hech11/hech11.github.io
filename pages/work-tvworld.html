@@ -9,12 +9,18 @@
 		<title>Neil Punj - TV-World</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../assets/css/workpieces/main-tvworld.css" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
 		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon/favicon.ico" />
 	</head>
+	<style>
+		body
+		{
+			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("/images/work/tvworld-preview.jpg");
+		}
+	</style>
 	<body class="is-preload">
-
+		
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
 
@@ -55,12 +61,32 @@
 						<!-- Content -->
 							<div class="wrapper">
 								<div class="inner">
-
+									
 									<div class="box alt">
 										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="../images/work/tvworld-preview.jpg" alt="" /></span></div>
+											<div class="col-12"><span class="image fit"><img src="../images/work/tvworld-preview.jpg" name="edit-save" alt="" /></span></div>
 										</div>
+										<ul class="pagination" style="text-align: center;">
+											<li><span id="backButtonSmall" onclick="IncrementPageCounter(false)" class="button small disabled">Prev</span></a></li>
+											<li><div id="demo"></div></li>
+											<li><span id="nextButtonSmall" onclick="IncrementPageCounter(true)" class="button small">Next</span></a></li>
+										</ul>
+										
 									</div>
+									<script>
+										window.onload = function() {
+   										 	InitPaginate(ThumbnailImgs);
+										};
+
+										const ThumbnailImgs = [
+											"../images/work/tvworld-preview.jpg",
+											"../images/work/tvworld/tvworld-preview2.jpg",
+											"../images/work/tvworld/tvworld-preview3.jpg",
+											"../images/work/tvworld/tvworld-preview4.jpg",
+										]
+									</script>
+
+
 									<ul class="actions fit">
 										<li><a href="https://hech11.itch.io/tv-world" class="button fit">View Itch.io Page</a></li>
 										<li><a href="https://www.youtube.com/embed/c-VrJt7qVXI" class="button fit">View Video</a></li>
@@ -99,6 +125,7 @@
 
 			</div>
 		<!-- Scripts -->
+			<script src="../assets/js/AutoPaginate.js"></script>
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.scrollex.min.js"></script>
 			<script src="../assets/js/browser.min.js"></script>
