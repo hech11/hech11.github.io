@@ -92,7 +92,7 @@ input, select, textarea {
 
 	}
 	:root{
-		--pseudo-bgimg: url("../../images/bg.jpg");
+		--pseudo-bgimg: url("../../images/code-example.jpg");
 	}
 	html {
 		box-sizing: border-box;
@@ -3472,11 +3472,9 @@ input, select, textarea {
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--pseudo-bgimg);
 				background-size: auto,
-				cover;
-					   background-attachment: fixed,
-				fixed;
-					   background-position: center,
-				center;
+ cover;
+				background-position: center,
+ center;
 				margin-bottom: -6.5em;
 			}
 
@@ -3586,11 +3584,9 @@ input, select, textarea {
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--pseudo-bgimg);
 			background-size: auto,
-			cover;
-				   background-attachment: fixed,
-			fixed;
-				   background-position: center,
-			center;
+ cover;
+			background-position: center,
+ 0% 30%;
 			margin-bottom: -6.5em;
 		}
 
@@ -4081,11 +4077,9 @@ input, select, textarea {
 			background-color: #2e3141;
 			background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--pseudo-bgimg);
 			background-size: auto,
-			cover;
-				   background-attachment: fixed,
-			fixed;
-				   background-position: center,
-			center;
+ cover;
+			background-position: center,
+ center;
 			margin-top: -6.5em;
 			padding-top: 6.5em;
 		}
