@@ -69,6 +69,7 @@
 									</div>
 									<script>
 										window.onload = function() {
+											changeBGImage("url('../../images/work/pacman-preview.jpg')")
    										 	InitPaginate(ThumbnailImgs);
 										};
 
@@ -80,6 +81,10 @@
 											"../images/work/pacman/pacman-preview5.jpg",
 											"../images/work/pacman/pacman-preview6.jpg",
 										]
+										function changeBGImage(imgPath)
+										{					
+											document.querySelector(':root').style.setProperty('--pseudo-bgimg',  imgPath);
+										}
 									</script>
 									<ul class="actions fit">
 										<li><a href="https://github.com/hech11/SorryCannotViewCode" class="button fit">View Github page</a></li>

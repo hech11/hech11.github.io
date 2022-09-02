@@ -61,6 +61,17 @@
 											<div class="col-12"><span class="image fit"><img src="../images/work/pixelate-preview.jpg" alt="" /></span></div>
 										</div>
 									</div>
+
+									<script>
+										window.onload = function() {
+											changeBGImage("url('../../images/work/pixelate-preview.jpg')")
+										};
+
+										function changeBGImage(imgPath)
+										{					
+											document.querySelector(':root').style.setProperty('--pseudo-bgimg',  imgPath);
+										}
+									</script>
 									<ul class="actions fit">
 										<li><a href="https://github.com/hech11/pixelate" class="button fit">View Github page</a></li>
 									</ul>

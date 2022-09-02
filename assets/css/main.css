@@ -91,7 +91,9 @@ input, select, textarea {
 		}
 
 	}
-
+	:root{
+		--pseudo-bgimg: url("../../images/bg.jpg");
+	}
 	html {
 		box-sizing: border-box;
 	}
@@ -102,7 +104,7 @@ input, select, textarea {
 
 	body {
 		background-color: #111314;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), var(--pseudo-bgimg);
 		background-size: auto,
  cover;
 		background-attachment: fixed,
