@@ -1,0 +1,191 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Neil Punj - Staffsverse</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon/favicon.ico" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="../index.html">Neil Punj</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="../index.html#AboutMe">About me</a></li>
+								<li><a href="../index.html#FeaturedWork">Featured Work</a></li>
+								<li><a href="allwork.html">Browse All Work</a></li>
+								<li><a href="../index.html#Skills">Skills</a></li>
+								<li><a href="../index.html#ContactDetails">Contact details</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+					
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2 style="text-align: center;">Staffsverse</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="../images/work/staffsverse-preview.jpg" name="edit-save" alt="" /></span></div>
+										</div>
+										<ul class="pagination" style="text-align: center;">
+											<li><span id="backButtonSmall" onclick="IncrementPageCounter(false)" class="button small disabled">Prev</span></a></li>
+											<li><div id="demo"></div></li>
+											<li><span id="nextButtonSmall" onclick="IncrementPageCounter(true)" class="button small">Next</span></a></li>
+										</ul>
+										
+									</div>
+									<script>
+										window.onload = function() {
+											changeBGImage("url('../../images/work/staffsverse-preview.jpg')")
+   										 	InitPaginate(ThumbnailImgs);
+										};
+
+										const ThumbnailImgs = [
+											"../images/work/staffsverse-preview.jpg",
+											"../images/work/staffsverse/staffsverse-preview5.png",
+											"../images/work/staffsverse/staffsverse-preview3.png",
+										]
+										function changeBGImage(imgPath)
+										{					
+											document.querySelector(':root').style.setProperty('--pseudo-bgimg',  imgPath);
+										}
+									</script>
+
+
+									<ul class="actions fit">
+										<!-- <li><a href="https://github.com/hech11/" class="button fit">View Github page</a></li> -->
+										<li><a href="https://youtu.be/SktzhCtokCg" class="button fit">View Video</a></li>
+									</ul>
+
+									Staffsverse was a project led by Staffordshire University students where we were briefed to create a metaverse-like application to introduce new students to the university's campus. 
+									The project had 3 teams: The art team, design team and tech team. The result was a 1:1 scale experience of the uni on Mars. The idea of being on mars was briefed to us by our head of the Games department. 
+									
+									This project will be an ongoing project that will take a few years to develop, but ~25 students were responsible for creating the foundations.
+
+									<h3 style="text-align: center;"><u></u></h3>
+										<div class="content">
+											<h2 class="major" style = "text-align: center;">Main Role & Responsibilities</h2>
+											<div class="table-wrapper"  style = "text-align: left;">
+												<table class="alt">
+													<thead>
+														<tr>
+															<th style = "text-align: center;">Role</th>
+															<th>Responsibilities</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td style = "text-align: center; vertical-align: middle;">Gameplay programmer</td>
+															<td>
+																<p style="margin:0;">I programmed in C++ and blueprints to help with some features and mechanics within Staffsverse.</p>
+																<p style="margin:0;">One of these features I created was a waypoint system that would help navigate users around the map.</p>
+																<p style="margin:0;">I would also collaborate with other programmers on the team to create systems too. One of these systems</p>
+																<p style="margin:0;">I helped to develop was a quest system. When creating these systems, we had to ensure each system was designer friendly and easier to use. We also had to make a technical document which explained to other</p>
+																<p style="margin:0;">programmers how our system worked on a technical aspect, and we had to create a technical design document to help inform designers on how to use our systems within the editor.</p>
+															</td>
+														</tr>
+														<tr>
+															<td style = "text-align: center; vertical-align: middle;">Support programmer</td>
+															<td>
+																<p style="margin:0;">I would go around our tech team and perform "code reviews", where I would</p>
+																<p style="margin:0;">make sure our code is up to a certain standard and help support my peers</p>
+																<p style="margin:0;">if they are having trouble implementing a mechanic or system.</p>
+															</td>
+														</tr>
+														<tr>
+															<td style = "text-align: center; vertical-align: middle;">Github manager</td>
+															<td>
+																<p>In this project, we could only use GitHub as source control. My role as manager was to make sure developers would know how to use GitHub and follow a standard that I helped to create. I was also responsible for reviewing pull requests, and I was one of the few people allowed to merge branches into the main branch.</p>
+															</td>
+														</tr>
+														<tr>
+															<td style = "text-align: center; vertical-align: middle;">Optimising</td>
+															<td>
+																<p>Towards the end of the project, I would go through the project and increase our frame rate. I would use Unreal’s profiling tools and RenderDoc to highlight potential performance bottlenecks within our project. We couldn’t use all of Unreal’s features because our project also needs to target lower-end machines. I planned and told the design team how to reduce draw calls and ensured the project had a few overdraw issues—both of which were the main bottlenecks of our project.</p>
+															</td>
+														</tr>
+														<tr>
+													</tbody>
+													<tfoot>
+														<!--<tr>
+															<td colspan="2"></td>
+															<td>100.00</td>
+														</tr>-->
+													</tfoot>
+												</table>
+											</div>
+										</div>
+
+									<h2><u>Tools used</u></h2>
+									<ul>
+									<li>Unreal 5</li>
+									<li>RenderDoc</li>
+									<li>Visual Studio 2022</li>
+									<li>Github + (CLI & <a href="https://git-fork.com/">Fork</a>)</li>
+									<li>Confluence</li>
+									<li>Jiro</li>
+									</ul>
+
+									<ul class="actions fit">
+										<li><a href="allwork.html" class="button fit">Browse All Work</a></li>
+									</ul>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP | Solid State</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+		<!-- Scripts -->
+			<script src="../assets/js/AutoPaginate.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
