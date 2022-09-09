@@ -58,25 +58,26 @@
 
 									<div class="box alt">
 										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="../images/work/pixelate-preview.png" name="edit-save" alt="" /></span></div>
+											<div class="col-12"><span class="image fit"><img src="../images/work/rose-preview.png" name="edit-save" alt="" /></span></div>
 										</div>
-										<ul class="pagination" style="text-align: center;">
+										 <!-- <ul class="pagination" style="text-align: center;">
 											<li><span id="backButtonSmall" onclick="IncrementPageCounter(false)" class="button small disabled">Prev</span></a></li>
 											<li><div id="demo"></div></li>
 											<li><span id="nextButtonSmall" onclick="IncrementPageCounter(true)" class="button small">Next</span></a></li>
-										</ul>
+										</ul> -->
 										
 									</div>
 									<script>
 										window.onload = function() {
+											changeBGImage("url('../../images/work/rose-preview.png')")
    										 	InitPaginate(ThumbnailImgs);
 										};
 
 										const ThumbnailImgs = [
-											"../images/work/tvworld-preview.jpg",
-											"../images/work/tvworld/tvworld-preview2.jpg",
-											"../images/work/tvworld/tvworld-preview3.jpg",
-											"../images/work/tvworld/tvworld-preview4.jpg",
+											"../images/work/rose-preview.png",
+											"../images/work/rose-preview.png",
+											"../images/work/rose-preview.png",
+											"../images/work/rose-preview.png"
 										]
 										
 										function changeBGImage(imgPath)
@@ -87,21 +88,18 @@
 
 
 									<ul class="actions fit">
-										<li><a href="https://github.com/hech11/" class="button fit">View Github page</a></li>
-										<li><a href="https://www.youtube.com/embed/6tPc_s5UMmA" class="button fit">View Video</a></li>
+										<li><a href="https://github.com/hech11/Rose" class="button fit">View Github page</a></li>
+										<li><a href="https://www.youtube.com/embed/Cl5vm99DBBA" class="button fit">View Video</a></li>
 									</ul>
-									<p>Flavour text about the project. ( above would be either an image or video)</p>
-									<p>brief on what my role was</p>
-									<h3><u>Some notes about the project ( taken from pixelate )</u></h3>
+									<p>Rose was made to educate myself about Vulkan and how it works. I've always wanted to learn Vulkan in my spare time but never had the chance to learn it until now. I wanted to know the API while also trying and implement some modern techniques used within the gaming industry. This library only has a basic forward renderer, but hopefully, in the future, I hope to experiment with clustered rendering, implementing different shadow algorithms, reflections, post processing and more. I'm not sure if this repository will use ray tracing in the future since I do not have a ray tracing compatible card.</p>
+
+									<h3><u>Some notes about the project</u></h3>
 									<ul>
-									<li>Made entirely in C++.</li>
-									<li>A batch renderer.</li>
-									<li>Audio system. Including spatial audio</li>
-									<li>Physics.</li>
-									<li>ECS system.</li>
-									<li>Can script entities via CSharp classes.</li>
-									<li>An editor. Including a scene and game viewer, hierarchy and component inspector and more.</li>
-									<li>Can save and load scenes.</li>
+									<li>Uses VMA.</li>
+									<li>Most buffers are implemented.</li>
+									<li>Textures and Cubemaps</li>
+									<li>Can load models.</li>
+									<li>Is fully PBR and has IBL.</li>
 									</ul>
 
 									<ul class="actions fit">
