@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Neil Punj - Arcadia The Claw</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon/favicon.ico" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="../index.html">Neil Punj</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="../index.html#AboutMe">About me</a></li>
+								<li><a href="../index.html#FeaturedWork">Featured Work</a></li>
+								<li><a href="allwork.html">Browse All Work</a></li>
+								<li><a href="../index.html#Skills">Skills</a></li>
+								<li><a href="../index.html#ContactDetails">Contact details</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+					
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2 style="text-align: center;">Arcadia The Claw</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="../images/work/arcadiatheclaw/arcadiatheclaw-preview1.jpg" name="edit-save" alt="" /></span></div>
+										</div>
+										<ul class="pagination" style="text-align: center;">
+											<li><span id="backButtonSmall" onclick="IncrementPageCounter(false)" class="button small disabled">Prev</span></a></li>
+											<li><div id="demo"></div></li>
+											<li><span id="nextButtonSmall" onclick="IncrementPageCounter(true)" class="button small">Next</span></a></li>
+										</ul>
+										
+									</div>
+									<script>
+										window.onload = function() {
+   										 	InitPaginate(ThumbnailImgs);
+										};
+
+										const ThumbnailImgs = [
+											"../images/work/arcadiatheclaw/arcadiatheclaw-preview1.jpg",
+											"../images/work/arcadiatheclaw/arcadiatheclaw-preview2.jpg",
+											"../images/work/arcadiatheclaw/arcadiatheclaw-preview3.jpg",
+											"../images/work/arcadiatheclaw/arcadiatheclaw-preview4.jpg",
+
+										]
+										
+										function changeBGImage(imgPath)
+										{					
+											document.querySelector(':root').style.setProperty('--pseudo-bgimg',  imgPath);
+										}
+									</script>
+
+
+									<ul class="actions fit">
+										<li><a href="https://hech11.itch.io/arcadia-the-claw" class="button fit">View Itch.io</a></li>
+										<li><a href="https://www.youtube.com/embed/NgliMKVAWNQ" class="button fit">View gameplay video</a></li>
+									</ul>
+									<p>A game made for a college game jam. We were against 3 other teams and made this in 2 weeks. The goal is to escape the inside of a claw machine by collecting toy pieces that are randomly placed within the level. While finding the pieces the claw in the claw machine will keep grabbing toys and possibly the player, resulting in a game over. The player has to escape within 5 minutes. This project was a team effort. I was a game designer, level designer and only programmer on the project.</p>
+									<h3><u>Some notes about the project</u></h3>
+									<ul>
+									<li>Made in Unity's HDRP pipeline.</li>
+									<li>All 2D assets and animations were created by me.</li>
+									<li>This game won the game jam.</li>
+									<li>Most assets were made from the ground up with the exception being the skybox.</li>
+									</ul>
+
+									<ul class="actions fit">
+										<li><a href="allwork.html" class="button fit">Browse All Work</a></li>
+									</ul>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP | Solid State</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+		<!-- Scripts -->
+			<script src="../assets/js/AutoPaginate.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>

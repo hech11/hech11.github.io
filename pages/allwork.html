@@ -56,7 +56,7 @@
 							<div class="wrapper">
 								<div class="inner">
 
-									  <section>
+									 <!-- <section>
 										<div class="row">
 											<div class="col-6 col-12-xsmall">
 												<label for="workpiece-status" style="text-align: center;">Status of project</label>
@@ -75,15 +75,16 @@
 												  </select> 
 											</div>
 
-									</section>
+									</section>-->
 									<div id="pieces"></div>
 
 
 									<script>
 										function myFunction() {
-										  var status = document.getElementById("workpiece-status").value;
-										  var type = document.getElementById("workpiece-type").value;
-										  if(status == "All-status-projects" && type == "All-type-projects")
+										 // var status = document.getElementById("workpiece-status").value;
+										  //var type = document.getElementById("workpiece-type").value;
+										  document.getElementById("pieces").innerHTML = ReturnAllFilters();
+										/*  if(status == "All-status-projects" && type == "All-type-projects")
 										  {
 											document.getElementById("pieces").innerHTML = ReturnAllFilters();
 										  }
@@ -93,7 +94,7 @@
 										  }
 										  else if(status == "All-status-projects" && type == "Game-Jams")
 										  {
-											document.getElementById("pieces").innerHTML = ReturnInDev_Education();
+											document.getElementById("pieces").innerHTML = ReturnGamejams();
 										  }
 										   else if(status == "In-development" && type == "All-type-projects")
 										  {
@@ -118,7 +119,7 @@
 										  else if(status == "Completed"&& type == "Game-Jams")
 										  {
 											document.getElementById("pieces").innerHTML = ReturnCompleted_GameJam();
-										  }
+										  }*/
 										}
 										window.onload = function() {
 											myFunction();

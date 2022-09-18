@@ -92,32 +92,7 @@
 							<section id="four" class="wrapper alt style1">
 								<div class="inner">
 									<h2 class="major">Featured Work</h2>
-									<section class="features">
-										<article>
-											<a href="pages/work-pixelate.html" class="image"><img src="images/work/pixelate-preview-shrunk.jpg" alt="" /></a>
-											<h3 class="major">Pixelate</h3>
-											<p>Pixelate is a game engine that is used to create 2D games. This project is still in development with the hopes of one day creating games with Pixelate. Currently Pixelate is being developed for desktop PC platforms with hopes to support other platforms in the future.</p>
-											<a href="pages/work-pixelate.html" class="special">View project</a>
-										</article>
-										<article>
-											<a href="pages/work-tvworld.html" class="image"><img src="images/work/tvworld-preview.jpg" alt="" /></a>
-											<h3 class="major">TV-World</h3>
-											<p>TV World was a college project where we had to simulate a small studio team. This was the first project I worked on where I managed and program a game to completion within a team.</p>
-											<a href="pages/work-tvworld.html" class="special">View project</a>
-										</article>
-										<article>
-											<a href="pages/work-rose.html" class="image"><img src="images/work/rose-preview.jpg" alt="" /></a>
-											<h3 class="major">Rose</h3>
-											<p>A vulkan renderer created by me. The aim of this renderer is to create a PBR IBL environment</p>
-											<a href="pages/work-rose.html" class="special">View project</a>
-										</article>
-										<article>
-											<a href="pages/work-mbarcade.html" class="image"><img src="images/work/mbarcade-preview.png" alt="" /></a>
-											<h3 class="major">Mario Bros</h3>
-											<p>For an assignment for University, I recreated nearly the entirety of Mario Bros arcade in C++ using SDL 2.</p>
-											<a href="pages/work-mbarcade.html" class="special">View project</a>
-										</article>
-									</section>
+									<div id="FeaturedPiecesExt"></div>
 									
 									<ul class="actions stacked">
 										<li><a href="pages/allwork.html" class="button fit">Browse All Work</a></li>
@@ -127,6 +102,14 @@
 
 					</section>
 				</div>
+				<script>
+					function myFunction() {
+					  document.getElementById("FeaturedPiecesExt").innerHTML = ReturnMainFeatured();
+					}
+					window.onload = function() {
+						myFunction();
+					};
+				</script>
 
 					<!-- Wrapper -->
 					<div id = "Skills">
@@ -254,6 +237,7 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/CustomAllWorkFilters.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>

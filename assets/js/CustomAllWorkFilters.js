@@ -89,10 +89,10 @@ function ReturnArcadiaArticle()
 {
     return `
     <article>
-    <a href="work-plugnet.html" class="image"><img src="../images/bg2.jpg" alt="" /></a>
+    <a href="work-arcadiatheclaw.html" class="image"><img src="../images/work/arcadiatheclaw/arcadiatheclaw-preview1.jpg" alt="" /></a>
     <h3 class="major">Arcadia The Claw</h3>
-    <p>A game made for a college project. Made in 2 weeks. The goal is to escape the inside of a claw machine.</p>
-    <a href="work-plugnet.html" class="special">View project</a>
+    <p>A game made for a college game jam. We were against 3 other teams and made this in 2 weeks. </p>
+    <a href="work-arcadiatheclaw.html" class="special">View project</a>
 </article>
     `;
 }
@@ -144,7 +144,22 @@ function ReturnAllFilters()
     `+ReturnOpenGLOneArticle()+`
     `+ReturnRoseArticle()+`
     `+ReturnStaffsverseArticle()+`
-    `+ReturnPlugnetArticle()+`
+    `+ReturnArcadiaArticle()+`
+
+</section>
+`];
+//https://accessdenied.itch.io/packing-panic
+    return result;
+}
+
+function ReturnMainFeatured() 
+{
+    var result = [ `
+<section class="features">
+    `+ReturnPixelateArticle()+`
+    `+ReturnTvworldArticle()+`
+    `+ReturnRoseArticle()+`
+    `+ReturnMBArcadeArticle()+`
 </section>
 `];
 
