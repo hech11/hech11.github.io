@@ -113,11 +113,11 @@ function ReturnPackingPanicArticle()
 {
     return `
     <article>
-    <a href="work-plugnet.html" class="image"><img src="../images/bg2.jpg" alt="" /></a>
-    <h3 class="major">Packing panic</h3>
-    <p>Temp.</p>
-    <a href="work-plugnet.html" class="special">View project</a>
-</article>
+        <a href="work-packingpanic.html" class="image"><img src="../images/work/packingpanic/packingpanic-preview1.jpg" alt="" /></a>
+        <h3 class="major">Packing Panic</h3>
+        <p>Temp.</p>
+        <a href="work-packingpanic.html" class="special">View project</a>
+    </article>
     `;
 }
 
@@ -145,6 +145,7 @@ function ReturnAllFilters()
     `+ReturnRoseArticle()+`
     `+ReturnStaffsverseArticle()+`
     `+ReturnArcadiaArticle()+`
+    `+ReturnPackingPanicArticle()+`
 
 </section>
 `];
