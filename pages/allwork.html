@@ -56,70 +56,12 @@
 							<div class="wrapper">
 								<div class="inner">
 
-									 <!-- <section>
-										<div class="row">
-											<div class="col-6 col-12-xsmall">
-												<label for="workpiece-status" style="text-align: center;">Status of project</label>
-												<select name="workpiece-status" style="text-align: center;" onchange="myFunction()" id="workpiece-status">
-													<option value="All-status-projects">All Projects</option>
-													<option value="In-development">In development</option>
-													<option value="Completed">Completed</option>
-												  </select> 
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<label for="workpiece-type" style="text-align: center;" >Type of work</label>
-												<select name="workpiece-type" style= "text-align: center;" onchange="myFunction()" id="workpiece-type">
-													<option value="All-type-projects">All Projects</option>
-													<option value="Made-In-Education">Personal</option>
-													<option value="Game-Jams">Game Jams</option>
-												  </select> 
-											</div>
-
-									</section>-->
+								
 									<div id="pieces"></div>
-
 
 									<script>
 										function myFunction() {
-										 // var status = document.getElementById("workpiece-status").value;
-										  //var type = document.getElementById("workpiece-type").value;
 										  document.getElementById("pieces").innerHTML = ReturnAllFilters();
-										/*  if(status == "All-status-projects" && type == "All-type-projects")
-										  {
-											document.getElementById("pieces").innerHTML = ReturnAllFilters();
-										  }
-										  else if(status == "All-status-projects" && type == "Made-In-Education")
-										  {
-											document.getElementById("pieces").innerHTML = ReturnPersonal();
-										  }
-										  else if(status == "All-status-projects" && type == "Game-Jams")
-										  {
-											document.getElementById("pieces").innerHTML = ReturnGamejams();
-										  }
-										   else if(status == "In-development" && type == "All-type-projects")
-										  {
-											document.getElementById("pieces").innerHTML = ReturnInDev();
-										  }
-										  else if(status == "In-development" && type == "Made-In-Education")
-										  {
-											document.getElementById("pieces").innerHTML = ReturnInDev_Education();
-										  }
-										  else if(status == "In-development" && type == "Game-Jams")
-										  {
-											document.getElementById("pieces").innerHTML = ReturnInDev_Gamejam();
-										  }
-										  else if(status == "Completed"&& type == "All-type-projects")
-										  {
-											document.getElementById("pieces").innerHTML = ReturnCompleted();
-										  }
-										  else if(status == "Completed"&& type == "Made-In-Education")
-										  {
-											document.getElementById("pieces").innerHTML = ReturnCompleted_Education();
-										  }
-										  else if(status == "Completed"&& type == "Game-Jams")
-										  {
-											document.getElementById("pieces").innerHTML = ReturnCompleted_GameJam();
-										  }*/
 										}
 										window.onload = function() {
 											myFunction();
