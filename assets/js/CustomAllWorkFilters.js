@@ -115,7 +115,7 @@ function ReturnPackingPanicArticle()
     <article>
         <a href="work-packingpanic.html" class="image"><img src="../images/work/packingpanic/packingpanic-preview1.jpg" alt="" /></a>
         <h3 class="major">Packing Panic</h3>
-        <p>Temp.</p>
+        <p>Packing panic was a game created for a university game jam where we had to work in a team to create a game within four days.</p>
         <a href="work-packingpanic.html" class="special">View project</a>
     </article>
     `;
