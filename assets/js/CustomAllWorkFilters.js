@@ -30,7 +30,7 @@ function ReturnTvworldArticle(isOnIndex = false)
     <article>
         <a href="`+indexGuard+`work-tvworld.html" class="image"><img src="../images/work/tvworld-preview.jpg" alt="" /></a>
         <h3 class="major">TV-World</h3>
-        <p>TV World was a college project where we had to simulate a small studio team. This was the first project I worked on where I managed and program a game to completion within a team.</p>
+        <p>TV-World was a college project where we had to simulate a small studio team. This game was the first project I worked on, where I managed and programmed a game to completion within a team over a substantial amount of time.</p>
         <a href="`+indexGuard+`work-tvworld.html" class="special">View project</a>
     </article>
     `;
