@@ -79,7 +79,7 @@ function ReturnOpenGLOneArticle(isOnIndex = false)
     }
     return `
     <article>
-        <a href="`+indexGuard+`work-opengl1dot1.html" class="image"><img src="../images/work/gl1-preview.png" alt="" /></a>
+        <a href="`+indexGuard+`work-opengl1dot1.html" class="image"><img src="../images/work/gl1-preview.jpg" alt="" /></a>
         <h3 class="major">OpenGL 1.1 Renderer</h3>
         <p>For an assignment for University, I created an OpenGL sandbox application. The version of OpenGL used was 1.1.</p>
         <a href="`+indexGuard+`work-opengl1dot1.html" class="special">View project</a>
