@@ -7,8 +7,8 @@ function filterTemplate(name = "HeadingName", desc = "temp desc.", filename = ".
     <article>
         <a href="`+indexGuard+filename+`" class="image"><img src="`+thumbnail+`" alt="" /></a>
         <h3 class="major" style="text-align:center;">`+name+`</h3>
-        <p style="font-size:80%">`+desc+`</p>
-        <a href="`+indexGuard+filename+`" class="button>View project</a>
+        <p>`+desc+`</p>
+        <a href="`+indexGuard+filename+`" class="special">View project</a>
     </article>
     `;
 }
