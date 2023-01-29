@@ -1,22 +1,32 @@
+
+
+function filterTemplate(name = "HeadingName", desc = "temp desc.", filename = ".html", thumbnail = "temp", indexGuard = "") 
+{
+    
+    return `
+    <article>
+        <a href="`+indexGuard+filename+`" class="image"><img src="`+thumbnail+`" alt="" /></a>
+        <h3 class="major" style="text-align:center;">`+name+`</h3>
+        <p style="font-size:80%">`+desc+`</p>
+        <a href="`+indexGuard+filename+`" class="button>View project</a>
+    </article>
+    `;
+}
+
 function ReturnPixelateArticle(isOnIndex = false) 
 {
-    /*        <b><u><span style="color:orange;">In development</span>
-    <span>-</span>
-    <span style="color:gray">Personal</span></b></u>*/
-
     var indexGuard = "";
     if(isOnIndex)
     {
         indexGuard = "pages/"
     }
-    return `
-    <article>
-        <a href="`+indexGuard+`work-pixelate.html" class="image"><img src="../images/work/pixelate-preview-shrunk.jpg" alt="" /></a>
-        <h3 class="major">Pixelate</h3>
-        <p>Pixelate is a game engine that is used to create 2D games. This project is still in development with the hopes of one day creating games with Pixelate. Currently Pixelate is being developed for desktop PC platforms with hopes to support other platforms in the future.</p>
-        <a href="`+indexGuard+`work-pixelate.html" class="special">View project</a>
-    </article>
-    `;
+
+    var name = "Pixelate";
+    var desc = "Pixelate is a game engine that is used to create 2D games. This project is still in development with the hopes of one day creating games with Pixelate. Currently Pixelate is being developed for desktop PC platforms with hopes to support other platforms in the future";
+    var srcfile = "work-pixelate.html";
+    var thumbnail = "../images/work/pixelate-preview-shrunk.jpg";
+
+    return filterTemplate(name, desc, srcfile, thumbnail, indexGuard);
 }
 
 function ReturnTvworldArticle(isOnIndex = false) 
@@ -26,48 +36,49 @@ function ReturnTvworldArticle(isOnIndex = false)
     {
         indexGuard = "pages/"
     }
-    return `
-    <article>
-        <a href="`+indexGuard+`work-tvworld.html" class="image"><img src="../images/work/tvworld-preview.jpg" alt="" /></a>
-        <h3 class="major">TV-World</h3>
-        <p>TV-World was a college project where we had to simulate a small studio team. This game was the first project I worked on, where I managed and programmed a game to completion within a team over a substantial amount of time.</p>
-        <a href="`+indexGuard+`work-tvworld.html" class="special">View project</a>
-    </article>
-    `;
+
+    var name = "TV-World";
+    var desc = "TV-World was a college project where we had to simulate a small studio team. This game was the first project I worked on, where I managed and programmed a game to completion within a team over a substantial amount of time.";
+    var srcfile = "work-tvworld.html";
+    var thumbnail = "../images/work/tvworld-preview.jpg";
+
+    return filterTemplate(name, desc, srcfile, thumbnail, indexGuard);
+
 }
 
 function ReturnPacmanArticle(isOnIndex = false) 
 {
+
     var indexGuard = "";
     if(isOnIndex)
     {
         indexGuard = "pages/"
     }
-    return `
-    <article>
-         <a href="`+indexGuard+`work-pacman.html" class="image"><img src="../images/work/pacman-preview.jpg" alt="" /></a>
-         <h3 class="major">Pacman</h3>
-         <p>For my first assignment in University, I created Pacman in C++. The aim was to try and recreate Pacman as close as I can while implementing my own ideas to the game.</p>
-        <a href="`+indexGuard+`work-pacman.html" class="special">View project</a>
-    </article>
-    `;
+
+    var name = "Pacman";
+    var desc = "For my first assignment in University, I created Pacman in C++. The aim was to try and recreate Pacman as close as I can while implementing my own ideas to the game.";
+    var srcfile = "work-pacman.html";
+    var thumbnail = "../images/work/pacman-preview.jpg";
+
+    return filterTemplate(name, desc, srcfile, thumbnail, indexGuard);
 }
 
 function ReturnMBArcadeArticle(isOnIndex = false) 
 {
+
     var indexGuard = "";
     if(isOnIndex)
     {
         indexGuard = "pages/"
     }
-    return `
-    <article>
-        <a href="`+indexGuard+`work-mbarcade.html" class="image"><img src="../images/work/mbarcade-preview.png" alt="" /></a>
-        <h3 class="major">Mario Bros</h3>
-        <p>For an assignment for University, I recreated nearly the entirety of Mario Bros arcade in C++ using SDL 2.</p>
-        <a href="`+indexGuard+`"work-mbarcade.html" class="special">View project</a>
-    </article>
-    `;
+
+    var name = "Mario Bros";
+    var desc = "For an assignment for University, I recreated nearly the entirety of Mario Bros arcade in C++ using SDL 2.";
+    var srcfile = "work-mbarcade.html";
+    var thumbnail = "../images/work/mbarcade-preview.png";
+
+    return filterTemplate(name, desc, srcfile, thumbnail, indexGuard);
+
 }
 
 function ReturnOpenGLOneArticle(isOnIndex = false) 
@@ -77,83 +88,84 @@ function ReturnOpenGLOneArticle(isOnIndex = false)
     {
         indexGuard = "pages/"
     }
-    return `
-    <article>
-        <a href="`+indexGuard+`work-opengl1dot1.html" class="image"><img src="../images/work/gl1-preview.jpg" alt="" /></a>
-        <h3 class="major">OpenGL 1.1 Renderer</h3>
-        <p>For an assignment for University, I created an OpenGL sandbox application. The version of OpenGL used was 1.1.</p>
-        <a href="`+indexGuard+`work-opengl1dot1.html" class="special">View project</a>
-    </article>
-    `;
+
+    var name = "OpenGL 1.1 Renderer";
+    var desc = "For an assignment for University, I created an OpenGL sandbox application. The version of OpenGL used was 1.1.";
+    var srcfile = "work-opengl1dot1.html";
+    var thumbnail = "../images/work/gl1-preview.jpg";
+
+    return filterTemplate(name, desc, srcfile, thumbnail, indexGuard);
+    
 }
 
 function ReturnRoseArticle(isOnIndex = false) 
 {
+
     var indexGuard = "";
     if(isOnIndex)
     {
         indexGuard = "pages/"
     }
-    return `
-    <article>
-    <a href="`+indexGuard+`work-rose.html" class="image"><img src="../images/work/rose-preview.jpg" alt="" /></a>
-    <h3 class="major">Rose</h3>
-    <p>A vulkan renderer created by me. The aim of this renderer is to create a PBR IBL environment</p>
-    <a href="`+indexGuard+`work-rose.html" class="special">View project</a>
-</article>
-    `;
+
+    var name = "Rose";
+    var desc = "A vulkan renderer created by me. The aim of this renderer is to create a PBR IBL environment";
+    var srcfile = "work-rose.html";
+    var thumbnail = "../images/work/rose-preview.jpg";
+
+    return filterTemplate(name, desc, srcfile, thumbnail, indexGuard);
 }
 
 function ReturnStaffsverseArticle(isOnIndex = false) 
 {
+
     var indexGuard = "";
     if(isOnIndex)
     {
         indexGuard = "pages/"
     }
-    return `
-    <article>
-        <a href="`+indexGuard+`work-staffsverse.html" class="image"><img src="../images/work/staffsverse-preview.jpg" alt="" /></a>
-        <h3 class="major">Staffsverse</h3>
-        <p>Staffsverse was a project led by Staffordshire University students where we were briefed to create a metaverse-like application to introduce new students to the university's campus.</p>
-        <a href="`+indexGuard+`work-staffsverse.html" class="special">View project</a>
-    </article>
-    `;
+
+    var name = "Staffsverse";
+    var desc = "Staffsverse was a project led by Staffordshire University students where we were briefed to create a metaverse-like application to introduce new students to the university's campus.";
+    var srcfile = "work-staffsverse.html";
+    var thumbnail = "../images/work/staffsverse-preview.jpg";
+
+    return filterTemplate(name, desc, srcfile, thumbnail, indexGuard);
 }
 
 function ReturnArcadiaArticle(isOnIndex = false) 
 {
+
     var indexGuard = "";
     if(isOnIndex)
     {
         indexGuard = "pages/"
     }
-    return `
-    <article>
-    <a href="`+indexGuard+`work-arcadiatheclaw.html" class="image"><img src="../images/work/arcadiatheclaw/arcadiatheclaw-preview1.jpg" alt="" /></a>
-    <h3 class="major">Arcadia The Claw</h3>
-    <p>A game made for a college game jam. We were against 3 other teams and made this in 2 weeks. </p>
-    <a href="`+indexGuard+`work-arcadiatheclaw.html" class="special">View project</a>
-</article>
-    `;
+
+    var name = "Arcadia The Claw";
+    var desc = "A game made for a college game jam. We were against 3 other teams and made this in 2 weeks.";
+    var srcfile = "work-arcadiatheclaw.html";
+    var thumbnail = "../images/work/arcadiatheclaw/arcadiatheclaw-preview1.jpg";
+
+    return filterTemplate(name, desc, srcfile, thumbnail, indexGuard);
+
 }
 
 function ReturnChonkArticle(isOnIndex = false) 
 {
+
     var indexGuard = "";
     if(isOnIndex)
     {
         indexGuard = "pages/"
     }
-    
-    return `
-    <article>
-        <a href="`+indexGuard+`work-plugnet.html" class="image"><img src="../images/bg2.jpg" alt="" /></a>
-        <h3 class="major">Chonk Simulator</h3>
-        <p>Made for Ludum Dare 41. Chonk Simulator is an endless arcade farming game where you must feed a greedy creature that has taken over your home. Don’t let him get too hungry, otherwise he’ll die.</p>
-        <a href="`+indexGuard+`work-plugnet.html" class="special">View project</a>
-    </article>
-    `;
+
+    var name = "Chonk Simulator";
+    var desc = "Made for Ludum Dare 41. Chonk Simulator is an endless arcade farming game where you must feed a greedy creature that has taken over your home. Don’t let him get too hungry, otherwise he’ll die.";
+    var srcfile = "work-plugnet.html";
+    var thumbnail = "../images/work/bg2.jpg";
+
+    return filterTemplate(name, desc, srcfile, thumbnail, indexGuard);
+
 }
 
 function ReturnPackingPanicArticle(isOnIndex = false) 
@@ -163,31 +175,30 @@ function ReturnPackingPanicArticle(isOnIndex = false)
     {
         indexGuard = "pages/"
     }
-    return `
-    <article>
-        <a href="`+indexGuard+`work-packingpanic.html" class="image"><img src="../images/work/packingpanic/packingpanic-preview1.jpg" alt="" /></a>
-        <h3 class="major">Packing Panic</h3>
-        <p>Packing panic was a game created for a university game jam where we had to work in a team to create a game within four days.</p>
-        <a href="`+indexGuard+`work-packingpanic.html" class="special">View project</a>
-    </article>
-    `;
+
+    var name = "Packing Panic";
+    var desc = "Packing panic was a game created for a university game jam where we had to work in a team to create a game within four days.";
+    var srcfile = "work-packingpanic.html";
+    var thumbnail = "../images/work/packingpanic/packingpanic-preview1.jpg";
+
+    return filterTemplate(name, desc, srcfile, thumbnail, indexGuard);
 }
 
 function ReturnPlugnetArticle(isOnIndex = false) 
 {
+
     var indexGuard = "";
     if(isOnIndex)
     {
         indexGuard = "pages/"
     }
-    return `
-    <article>
-        <a href="`+indexGuard+`work-plugnet.html" class="image"><img src="../images/bg2.jpg" alt="" /></a>
-        <h3 class="major">Plugnet</h3>
-        <p>A C++ library that applications can use to create game client and servers.</p>
-        <a href="`+indexGuard+`work-plugnet.html" class="special">View project</a>
-    </article>
-    `;
+
+    var name = "Plugnet";
+    var desc = "A C++ library that applications can use to create game client and servers.";
+    var srcfile = "work-plugnet.html";
+    var thumbnail = "../images/work/bg2.jpg";
+
+    return filterTemplate(name, desc, srcfile, thumbnail, indexGuard);
 }
 
 function ReturnAllFilters(isOnIndex = false) 
