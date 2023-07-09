@@ -311,7 +311,14 @@ function ReturnMainFeatured()
 {
 
     const pieces = [ WorkPieces["Pixelate"], WorkPieces["TV-World"], WorkPieces["Rose"], WorkPieces["Mario Bros Arcade"]];
-    var result = [ ` <!-- Container for the image gallery -->
+    var result = [ ` 
+    
+    
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Container for the image gallery -->
     <div class="container">
     <!-- Image text -->
       
@@ -332,10 +339,6 @@ function ReturnMainFeatured()
           <img src="`+pieces[3].thumbnail+`" class="imgdemo">
           </div>
     
-      <!-- Next and previous buttons -->
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
       <div class="caption-container">
         <p style="margin:0;" id="caption"></p>
       </div>
