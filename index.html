@@ -83,14 +83,52 @@
 								</div>
 							</section>
 
-					</section>
 				</div>
+
 				<script>
 					function myFunction() {
 					  document.getElementById("FeaturedPiecesExt").innerHTML = ReturnMainFeatured();
 					}
+					let slideIndex = 1;
+
+					function plusSlides(n) {
+				  showSlides(slideIndex += n);
+				}
+				
+				function currentSlide(n) {
+				  showSlides(slideIndex = n);
+				}
+				
+				function showSlides(n) {
+				  let i;
+				  let slides = document.getElementsByClassName("mySlides");
+				  let dots = document.getElementsByClassName("demo");
+				  let captionText = document.getElementById("caption");
+				  let descText = document.getElementById("imgdemocaption");
+
+
+				  
+				  if (n > slides.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";
+				  dots[slideIndex-1].className += " active";
+				  captionText.innerHTML = `<a href="`+WorkPieces[dots[slideIndex-1].alt].filename+`" class ="small button">View `+dots[slideIndex-1].alt+`</a>`;
+				  descText.innerHTML = WorkPieces[dots[slideIndex-1].alt].desc;
+				}
+
 					window.onload = function() {
-						myFunction();
+						
+						Init().then(function() 
+						{
+							myFunction();
+							showSlides(slideIndex);
+						} );
 					};
 				</script>
 
@@ -129,7 +167,7 @@
 														<td style = "text-align: center; vertical-align: middle;">Graphics</td>
 														<td>
 															<ul style="margin:0;">
-																<li>OpenGL 3.4+</li>
+																<li>OpenGL 3.4+</a></li>
 																<li>DirectX11</li>
 																<li>Vulkan</li>
 															</ul>
@@ -220,7 +258,7 @@
 				</div>
 			</div>
 
-		<!-- Scripts -->
+			
 			<script src="assets/js/CustomAllWorkFilters.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -228,6 +266,13 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<!-- Scripts -->
+	
+			<script>
+				
+			
+				</script>
+					
+			
 	</body>
 </html>
