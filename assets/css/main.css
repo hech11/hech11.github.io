@@ -4245,7 +4245,7 @@ input, select, textarea {
 	transition: .5s ease;
 	opacity:1;
 	color: white;
-	font-size: 20px;
+	font-size: inherit;
 	padding: 20px;
 	text-align: center;
   }
