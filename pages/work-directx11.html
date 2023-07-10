@@ -8,7 +8,7 @@
 
 <html>
 	<head>
-		<title>Neil Punj - Amaurosis</title>
+		<title>Neil Punj - DirectX11</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -51,7 +51,7 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2 style="text-align: center;">Amaurosis</h2>
+								<h2 style="text-align: center;">DirectX11</h2>
 							</div>
 						</header>
 
@@ -61,7 +61,7 @@
 
 									<div class="box alt">
 										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="../images/work/pixelate-preview.png" name="edit-save" alt="" /></span></div>
+											<div class="col-12"><span class="image fit"><img src="/images/work/directx11/directx11-preview1.jpg" name="edit-save" alt="" /></span></div>
 										</div>
 										<ul class="pagination" style="text-align: center;">
 											<li><span id="backButtonSmall" onclick="IncrementPageCounter(false)" class="button small disabled">Prev</span></a></li>
@@ -77,10 +77,8 @@
 										};
 
 										const ThumbnailImgs = [
-											"../images/work/tvworld-preview.jpg",
-											"../images/work/tvworld/tvworld-preview2.jpg",
-											"../images/work/tvworld/tvworld-preview3.jpg",
-											"../images/work/tvworld/tvworld-preview4.jpg",
+											"/images/work/directx11/directx11-preview1.jpg",
+											"/images/work/directx11/directx11-preview2.jpg",
 										]
 										
 										function changeBGImage(imgPath)
@@ -91,21 +89,22 @@
 
 
 									<ul class="actions fit">
-										<li><a href="https://github.com/hech11/" class="button fit">View Github page</a></li>
-										<li><a href="https://www.youtube.com/embed/6tPc_s5UMmA" class="button fit">View Video</a></li>
+										<li><a href="https://github.com/hech11/SorryCannotViewCode" class="button fit">View Github page</a></li>
+										<li><a href="https://www.youtube.com/watch?v=u6I7Lv7HVlw" class="button fit">View Video</a></li>
 									</ul>
 									<p>Flavour text about the project. ( above would be either an image or video)</p>
-									<p>brief on what my role was</p>
-									<h3><u>Some notes about the project ( taken from pixelate )</u></h3>
+									<h3><u>Some notes about the project</u></h3>
 									<ul>
-									<li>Made entirely in C++.</li>
-									<li>A batch renderer.</li>
-									<li>Audio system. Including spatial audio</li>
-									<li>Physics.</li>
-									<li>ECS system.</li>
-									<li>Can script entities via CSharp classes.</li>
-									<li>An editor. Including a scene and game viewer, hierarchy and component inspector and more.</li>
-									<li>Can save and load scenes.</li>
+									<li>Made in C++.</li>
+									<li>Includes an ECS system.</li>
+									<li>Skyboxes are implemented.</li>
+									<li>Phong lighting is programmed, including directional and point lights.</li>
+									<li>Shadow mapping is programmed.</li>
+									<li>Reflections are programmed.</li>
+									<li>Normal mapping is supported.</li>
+									<li>Linear and exp2 fogs is supported.</li>
+									<li>Can dynamically load any model, texture or material within the editor.</li>
+									<li>Can load .TTF files for fonts and render them.</li>
 									</ul>
 
 									<ul class="actions fit">

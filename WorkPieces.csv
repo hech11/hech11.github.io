@@ -3,14 +3,14 @@ Pixelate,Pixelate,Pixelate,Pixelate is a game engine that is used to create 2D g
 TV-World,TV-World,TV-World,TV-World was a college project where we had to simulate a small studio team. This game was the first project I worked on where I managed and programmed a game to completion within a team over a substantial amount of time.,/pages/work-tvworld.html,/images/work/tvworld-preview.jpg
 Pacman,Pacman,Pacman,For my first assignment in University I created Pacman in C++. The aim was to try and recreate Pacman as close as I can while implementing my own ideas to the game.,/pages/work-pacman.html,/images/work/pacman-preview.jpg
 Rose,Rose,Rose,A vulkan renderer created by me. The aim of this renderer is to create a PBR IBL environment,/pages/work-rose.html,/images/work/rose-preview.jpg
-OpenGL1.1,Temp.,Temp.,For an assignment for University I created an OpenGL sandbox application. The version of OpenGL used was 1.1.,/pages/work-opengl1dot1.html,/images/work/gl1-preview.jpg
+OpenGL1.1 Project,Temp.,Temp.,For an assignment for University I created an OpenGL sandbox application. The version of OpenGL used was 1.1.,/pages/work-opengl1dot1.html,/images/work/gl1-preview.jpg
 Mario Bros Arcade,Temp.,Temp.,For an assignment for University I recreated nearly the entirety of Mario Bros arcade in C++ using SDL 2.,/pages/work-mbarcade.html,/images/work/mbarcade-preview.png
 Staffsverse,Temp.,Temp.,Staffsverse was a project led by Staffordshire University students where we were briefed to create a metaverse-like application to introduce new students to the university's campus.,/pages/work-staffsverse.html,/images/work/staffsverse-preview.jpg
 Arcadia The Claw,Temp.,Temp.,A game made for a college game jam. We were against 3 other teams and made this in 2 weeks.,/pages/work-arcadiatheclaw.html,/images/work/arcadiatheclaw/arcadiatheclaw-preview1.jpg
 Chonk Sim,Temp.,Temp.,Made for Ludum Dare 41. Chonk Simulator is an endless arcade farming game where you must feed a greedy creature that has taken over your home. Don?t let him get too hungry otherwise he?ll die.,/pages/work-plugnet.html,/images/bg2.jpg
 Packing Panic,Temp.,Temp.,Packing panic was a game created for a university game jam where we had to work in a team to create a game within four days.,/pages/work-packingpanic.html,/images/work/packingpanic/packingpanic-preview1.jpg
 Plugnet,Temp.,Temp.,A C++ library that applications can use to create game client and servers.,/pages/work-plugnet.html,/images/bg2.jpg
-DirectX11 Project,Temp.,Temp.,Temp.,Temp.,/images/bg2.jpg
+DirectX11 Project,Temp.,Temp.,For an assignment for University I created an DirectX11 sandbox application. The goal of this project was to be an improvement of the OpenGL1.1 renderer by introducing render passes and more graphical effects such as shadow and normal mapping.,/pages/work-directx11.html,/images/work/directx11/directx11-preview1.jpg
 Physics Library,Temp.,Temp.,Temp.,Temp.,/images/bg2.jpg
 CSharp Chat Room,Temp.,Temp.,Temp.,Temp.,/images/bg2.jpg
 AI Project,Temp.,Temp.,Temp.,Temp.,/images/bg2.jpg
