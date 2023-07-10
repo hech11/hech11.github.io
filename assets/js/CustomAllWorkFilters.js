@@ -314,10 +314,7 @@ function ReturnMainFeatured()
     var result = [ ` 
     
     
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+    
     <!-- Container for the image gallery -->
     <div class="container">
     <!-- Image text -->
@@ -339,8 +336,13 @@ function ReturnMainFeatured()
           <img src="`+pieces[3].thumbnail+`" class="imgdemo">
           </div>
     
-      <div class="caption-container">
+      <div class="caption-container" style=" display: flex;
+      justify-content: space-between;">
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <p style="margin:0;" id="caption"></p>
+        <!-- Next and previous buttons -->
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
       </div>
     
       <div id="imgdemocaption" class="imgdemocaption"></div>
