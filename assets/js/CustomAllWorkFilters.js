@@ -282,13 +282,20 @@ function ReturnAllFilters(isOnIndex = false)
 <section class="features">
     `+GenerateArticle("Pixelate")+`
     `+GenerateArticle("TV-World")+`
-    `+GenerateArticle("Pacman")+`
-    `+GenerateArticle("Mario Bros Arcade")+`
-    `+GenerateArticle("OpenGL1.1")+`
     `+GenerateArticle("Rose")+`
+    `+GenerateArticle("Amaurosis")+`
+    `+GenerateArticle("Mario Bros Arcade")+`
+    `+GenerateArticle("Pacman")+`
+    `+GenerateArticle("OpenGL1.1")+`
     `+GenerateArticle("Staffsverse")+`
     `+GenerateArticle("Arcadia The Claw")+`
     `+GenerateArticle("Packing Panic")+`
+    `+GenerateArticle("Physics Library")+`
+    `+GenerateArticle("DirectX11 Project")+`
+    `+GenerateArticle("CSharp Chat Room")+`
+    `+GenerateArticle("AI Project")+`
+    `+GenerateArticle("Plugnet")+`
+    
 
 </section>
 `];
@@ -310,7 +317,7 @@ function ReturnAllFilters(isOnIndex = false)
 function ReturnMainFeatured() 
 {
 
-    const pieces = [ WorkPieces["Pixelate"], WorkPieces["TV-World"], WorkPieces["Rose"], WorkPieces["Mario Bros Arcade"]];
+    const pieces = [ WorkPieces["Pixelate"], WorkPieces["TV-World"], WorkPieces["Rose"], WorkPieces["Amaurosis"]];
     var result = [ ` 
     
     

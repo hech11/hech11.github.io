@@ -118,7 +118,7 @@
 				  }
 				  slides[slideIndex-1].style.display = "block";
 				  dots[slideIndex-1].className += " active";
-				  captionText.innerHTML = `<a href="`+WorkPieces[dots[slideIndex-1].alt].filename+`" class ="small button">View `+dots[slideIndex-1].alt+`</a>`;
+				  captionText.innerHTML = `<a href="`+WorkPieces[dots[slideIndex-1].alt].filename+`" class ="small button" style="text-align:center;margin-top: 10px;">View `+dots[slideIndex-1].alt+`</a>`;
 				  descText.innerHTML = WorkPieces[dots[slideIndex-1].alt].desc;
 				}
 

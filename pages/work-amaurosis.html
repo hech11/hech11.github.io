@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+
+
+<html>
+	<head>
+		<title>Neil Punj - Amaurosis</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon/favicon.ico" />
+	</head>
+	<body class="is-preload">
+		
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="../index.html">Neil Punj</a></h1>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<div class="inner">
+							<h2>Menu</h2>
+							<ul class="links">
+								<li><a href="../index.html">Home</a></li>
+								<li><a href="../index.html#AboutMe">About me</a></li>
+								<li><a href="../index.html#FeaturedWork">Featured Work</a></li>
+								<li><a href="allwork.html">Browse All Work</a></li>
+								<li><a href="../index.html#Skills">Skills</a></li>
+								<li><a href="../index.html#ContactDetails">Contact details</a></li>
+							</ul>
+							<a href="#" class="close">Close</a>
+						</div>
+					</nav>
+
+					
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2 style="text-align: center;">Amaurosis</h2>
+							</div>
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+
+									<div class="box alt">
+										<div class="row gtr-uniform">
+											<div class="col-12"><span class="image fit"><img src="../images/work/amaurosis/amaurosis-preview1.jpg" name="edit-save" alt="" /></span></div>
+										</div>
+										<ul class="pagination" style="text-align: center;">
+											<li><span id="backButtonSmall" onclick="IncrementPageCounter(false)" class="button small disabled">Prev</span></a></li>
+											<li><div id="demo"></div></li>
+											<li><span id="nextButtonSmall" onclick="IncrementPageCounter(true)" class="button small">Next</span></a></li>
+										</ul>
+										
+									</div>
+									<script>
+										window.onload = function() {
+											Init();
+											changeBGImage("url('../../images/work/amaurosis/amaurosis-preview1.jpg')")
+											InitPaginate(ThumbnailImgs);
+										};
+
+										const ThumbnailImgs = [
+											"../images/work/amaurosis/amaurosis-preview1.jpg",
+											"../images/work/amaurosis/amaurosis-preview2.jpg",
+											"../images/work/amaurosis/amaurosis-preview3.jpg",
+											"../images/work/amaurosis/amaurosis-preview4.jpg"
+										]
+										
+										function changeBGImage(imgPath)
+										{					
+											document.querySelector(':root').style.setProperty('--pseudo-bgimg',  imgPath);
+										}
+									</script>
+
+
+									<ul class="actions fit">
+										<!--<li><a href="https://github.com/hech11/" class="button fit">View Github page</a></li>-->
+										<li><a href="https://www.youtube.com/watch?v=YmQPLhNtK4Q" class="button fit">View Video</a></li>
+									</ul>
+									<p>Amaurosis was a university project where we simulated a small team of programmers to create this game. I was the main programming lead and oversaw development of nearly all systems. I was also responsible for shader work and architecturing the game.</p>
+									<p>Amaurosis is a first-person horror survival game where the player you must complete objectives while evading a monster that is roaming around and hunting you. Both player and monster are blind.
+									<p>For the player to see their surroundings they must make noise to emit noise waves around them. The player can make noise by walking and throwing objects. However while noise waves are used to help the player see they are also used by the monster to help locate the player. To win players must complete mini games and turn on generators to power the door to escape.</p></p>
+
+									<h3 style="text-align: center;"><u></u></h3>
+									<div class="content">
+										<h2 class="major" style = "text-align: center;">Roles & Responsibilities</h2>
+										<div class="table-wrapper"  style = "text-align: left;">
+											<table class="alt">
+												<thead>
+													<tr>
+														<th style = "text-align: center;">Role</th>
+														<th>Responsibilities</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr>
+														<td style = "text-align: center; vertical-align: middle;">Programming lead</td>
+														<td>
+															<p style="margin:0;">We all agreed to contribute to the game's design as a team. While programming the game, I would add mechanics to see if it made it more fun or exciting. I suggested that the game be competitive and that the player quickly drags and drops items to score points.</p>
+														</td>
+													</tr>
+													<tr>
+														<td style = "text-align: center; vertical-align: middle;">Gameplay programmer</td>
+														<td>
+															<p style="margin:0;">Since I was the only programmer on the project and we did not have much time, I had to make sure we could quickly iterate the prototype and stick to our design. We tried many prototypes of different game ideas and eventually came up with Packing panic.</p>
+														</td>
+													</tr>
+													<tr>
+														<td style = "text-align: center; vertical-align: middle;">Optimisation</td>
+														<td>
+															<p style="margin:0;">We all agreed to contribute to the game's design as a team. While programming the game, I would add mechanics to see if it made it more fun or exciting. I suggested that the game be competitive and that the player quickly drags and drops items to score points.</p>
+														</td>
+													</tr>
+													<tr>
+														<td style = "text-align: center; vertical-align: middle;">Github manager</td>
+														<td>
+															<p style="margin:0;">We all agreed to contribute to the game's design as a team. While programming the game, I would add mechanics to see if it made it more fun or exciting. I suggested that the game be competitive and that the player quickly drags and drops items to score points.</p>
+														</td>
+													</tr>
+													<tr>
+												</tbody>
+												<tfoot>
+													<!--<tr>
+														<td colspan="2"></td>
+														<td>100.00</td>
+													</tr>-->
+												</tfoot>
+											</table>
+										</div>
+									</div>
+
+
+									<h3><u>Some notes about the project</u></h3>
+									<ul>
+									<li>Made entirely in C++.</li>
+									<li>A batch renderer.</li>
+									<li>Audio system. Including spatial audio</li>
+									<li>Physics.</li>
+									<li>ECS system.</li>
+									<li>Can script entities via CSharp classes.</li>
+									<li>An editor. Including a scene and game viewer, hierarchy and component inspector and more.</li>
+									<li>Can save and load scenes.</li>
+									</ul>
+
+									<ul class="actions fit">
+										<li><a href="allwork.html" class="button fit">Browse All Work</a></li>
+									</ul>
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+					<section id="footer">
+						<div class="inner">
+							<ul class="copyright">
+								<li>Design: <a href="http://html5up.net">HTML5 UP | Solid State</a></li>
+							</ul>
+						</div>
+					</section>
+
+			</div>
+			
+			
+		<!-- Scripts -->
+			<script src="../assets/js/CustomAllWorkFilters.js"></script>
+			<script src="../assets/js/AutoPaginate.js"></script>
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/browser.min.js"></script>
+			<script src="../assets/js/breakpoints.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
