@@ -51,18 +51,6 @@ function processCSV(csvContent) {
     }
   }
 
-function filterTemplate(name = "HeadingName", desc = "temp desc.", filename = ".html", thumbnail = "temp", indexGuard = "") 
-{
-    
-    return `
-    <article>
-        <a href="`+indexGuard+filename+`" class="image"><img src="`+thumbnail+`" alt="" /></a>
-        <h3 class="major" style="text-align:center;">`+name+`</h3>
-        <p>`+desc+`</p>
-        <a href="`+indexGuard+filename+`" class="special">View project</a>
-    </article>
-    `;
-}
 
 function intern_genWorkArticle(name = "HeadingName", desc = "temp desc.", filename = ".html", thumbnail = "temp") 
 {
@@ -101,10 +89,6 @@ function ReturnAllFilters(isOnIndex = false)
     `+GenerateArticle("Staffsverse")+`
     `+GenerateArticle("Arcadia The Claw")+`
     `+GenerateArticle("Packing Panic")+`
-    `+GenerateArticle("Physics Library")+`
-    `+GenerateArticle("CSharp Chat Room")+`
-    `+GenerateArticle("AI Project")+`
-    `+GenerateArticle("Plugnet")+`
     
 
 </section>
@@ -112,17 +96,12 @@ function ReturnAllFilters(isOnIndex = false)
     return result;
 }
 
-
-/*function ReturnMainFeatured() 
-{
-    var result = [ `
-<section class="features">
-    `+ReturnPixelateArticle(true)+`
-    `+ReturnTvworldArticle(true)+`
-    `+ReturnRoseArticle(true)+`
-    `+ReturnMBArcadeArticle(true)+`
-</section>
-`];*/
+/*
+`+GenerateArticle("Physics Library")+`
+    `+GenerateArticle("CSharp Chat Room")+`
+    `+GenerateArticle("AI Project")+`
+    `+GenerateArticle("Plugnet")+`
+    */
 
 function ReturnMainFeatured() 
 {
