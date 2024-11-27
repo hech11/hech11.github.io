@@ -33,7 +33,7 @@
 							<ul class="links">
 								<li><a href="#Home">Home</a></li>
 								<li><a href="#AboutMe">About me</a></li>
-								<li><a href="#FeaturedWork">Featured Work</a></li>
+								<li><a href="#IndustryWork">Work</a></li>
 								<li><a href="pages/allwork.html">Browse All Work</a></li>
 								<li><a href="#Skills">Skills</a></li>
 								<li><a href="#ContactDetails">Contact details</a></li>
@@ -49,13 +49,32 @@
 						<div class="inner">
 							<div class="logo" style="text-align: center"></span></div>
 							<h2 style="text-align: center">Neil Punj</h2>
-							<p style="text-align: center">BSc (Hons) Games Programmer Degree Student | Y2</p>
+							<p style="text-align: center">BSc (Hons) Games Programmer Degree Student | Y3</p>
 						</div>
 					</section>
 			</div>
 			
 
-				 <!-- Wrapper -->
+		
+
+				 <div id = "IndustryWork">
+						<!-- Four -->
+							<section id="four" class="wrapper alt style1">
+								<div class="inner">
+									<h2 class="major"style="text-align: center">Industry Work</h2>
+									<div id="IndustryWorkExt"></div>
+									<h2 class="major"style="text-align: center">Academic Work</h2>
+									<div id="PersonalWorkExt"></div>
+									<ul class="actions stacked">
+										<li><a href="pages/allwork.html" class="button fit">Browse All Work</a></li>
+									</ul>
+								</div>
+								</div>
+							</section>
+				</div>
+
+			
+		 <!-- Wrapper -->
 				 <div id = "AboutMe">
 					<section id="wrapper">
 						
@@ -69,25 +88,10 @@
 								</div>
 							</section>
 				 </div>
-
-				 <div id = "FeaturedWork">
-						<!-- Four -->
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Featured Work</h2>
-									<div id="FeaturedPiecesExt"></div>
-									
-									<ul class="actions stacked">
-										<li><a href="pages/allwork.html" class="button fit">Browse All Work</a></li>
-									</ul>
-								</div>
-							</section>
-
-				</div>
-
 				<script>
 					function myFunction() {
-					  document.getElementById("FeaturedPiecesExt").innerHTML = ReturnMainFeatured();
+					  document.getElementById("IndustryWorkExt").innerHTML = ReturnIndustryWork();
+					  document.getElementById("PersonalWorkExt").innerHTML = ReturnMainFeatured();
 					}
 					let slideIndex = 1;
 
@@ -98,7 +102,6 @@
 				function currentSlide(n) {
 				  showSlides(slideIndex = n);
 				}
-				
 				function showSlides(n) {
 				  let i;
 				  let slides = document.getElementsByClassName("mySlides");
@@ -127,7 +130,7 @@
 						Init().then(function() 
 						{
 							myFunction();
-							showSlides(slideIndex);
+							showSlides(1)
 						} );
 					};
 				</script>
@@ -136,7 +139,7 @@
 					<div id = "Skills">
 					<section id="wrapper">
 								
-					<section id="one" class="wrapper spotlight style3">
+					<section id="one" class="wrapper alt style1">
 						<div class="inner">
 									<div class="content">
 										<h2 class="major" style = "text-align: center;">Skills</h2>
@@ -150,16 +153,30 @@
 												</thead>
 												<tbody>
 													<tr>
+														<td style = "text-align: center; vertical-align: middle;">Worked on these platforms</td>
+														<td>
+															<ul style="margin:0;">
+																<li>Windows</li>
+																<li>Linux</li>
+																<li>Xbox One</li>
+																<li>Xbox Series X/S</li>
+																<li>PS4</li>
+															</ul>
+														</td>
+													</tr>
+													<tr>
 														<td style = "text-align: center; vertical-align: middle;">Programming Languages</td>
 														<td>
 															<ul style="margin:0;">
-																<li>C++17</li>
+																<li>C++14-20</li>
 																<li>C</li>
 																<li>C#</li>
 																<li>Java</li>
 																<li>Python</li>
 																<li>Lua</li>
 																<li>Javascript</li>
+																<li>Powershell</li>
+																<li>Bat scripting</li>
 															</ul>
 														</td>
 													</tr>
@@ -179,48 +196,44 @@
 															<ul style="margin:0;">
 																<li>OpenAL</li>
 																<li>XAudio2</li>
+																<li>FMOD</li>
 															</ul>
 														</td>
 													</tr>
 													<tr>
-														<td style = "text-align: center; vertical-align: middle;">Physics</td>
+														<td style = "text-align: center; vertical-align: middle;">Networking (+ CLI)</td>
 														<td>
 															<ul style="margin:0;">
-																<li>Box2D</li>
-																<li>PhysX</li>
+																<li>Jenkins</li>
+																<li>TeamCity</li>
+																<li>NGINX</li>
+																<li>ASIO</li>
 															</ul>
 														</td>
-													</tr>
-													<tr>
-														<tr>
-															<td style = "text-align: center; vertical-align: middle;">Networking (+ CLI)</td>
-															<td>
-																<ul style="margin:0;">
-																	<li>ASIO</li>
-																	<li>Jenkins</li>
-																	<li>NGINX</li>
-																</ul>
-															</td>
-														</tr>
 													<tr>
 														<td style = "text-align: center; vertical-align: middle;">Tools</td>
 														<td>
 															<ul style="margin:0;">
 																<li>RenderDoc</li>
-																<li>PIX</li>
+																<li>PIX for Console</li>
+																<li>PIX for Windows</li>
 																<li>Visual Studio</li>
 																<li>Visual Studio Code</li>
+																<li>Github</li>
+																<li>Gitlab</li>
+																<li>Perforce</li>
+																<li>Unit testing via Google Test</li>
+																<li>JIRA</li>
+																<li>Azure Dev Ops</li>
 															</ul>
 														</td>
 													</tr>
 													<tr>
-														<td style = "text-align: center; vertical-align: middle;">Engines + libraries</td>
+														<td style = "text-align: center; vertical-align: middle;">Engines</td>
 														<td>
 															<ul style="margin:0;">
 																<li>Unity</li>
 																<li>Unreal</li>
-																<li>SDL2</li>
-																<li>SFML</li>
 															</ul>
 														</td>
 													</tr>
@@ -247,7 +260,6 @@
 								<li class="icon solid fa-envelope"><a href="mailto:nkp1workbiz@gmail.com">nkp1workbiz@gmail.com</a></li>
 								<li class="icon brands fa-github"><a href="https://github.com/hech11">github.com/hech11</a></li>
 								<li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/in/neil-punj-70b52719b/">Neil Punj</a></li>
-								<li class="icon brands fa-twitter"><a href="https://twitter.com/_hech11">twitter.com/_hech11</a></li>
 							</ul>
 							<ul class="copyright">
 								<li>Design: <a href="http://html5up.net">HTML5 UP | Solid State</a></li>

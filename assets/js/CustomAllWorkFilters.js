@@ -2,7 +2,7 @@
 
 
 class FilterTemplate {
-    constructor(name = "headingname", namealt1="alt1", namealt2="alt2", desc = "temp desc", filename=".html", thumbnail="temp") 
+    constructor(name = "headingname", namealt1="alt1", namealt2="alt2", desc = "temp desc", filename=".html", thumbnail="temp", date="") 
     {
         this.name = name;
         this.namealt1 = namealt1;
@@ -10,6 +10,7 @@ class FilterTemplate {
       this.desc = desc;
       this.filename = filename;
       this.thumbnail = thumbnail;
+      this.date = date;
     }
   
   }
@@ -45,14 +46,14 @@ function processCSV(csvContent) {
       {
         const fields = line.split(',');
 
-        const workPiece = new FilterTemplate(fields[0], fields[1], fields[2], fields[3],fields[4],fields[5]);
+        const workPiece = new FilterTemplate(fields[0], fields[1], fields[2], fields[3],fields[4],fields[5], fields[6]);
         WorkPieces[fields[0]] = workPiece;
       }
     }
   }
 
 
-function intern_genWorkArticle(name = "HeadingName", desc = "temp desc.", filename = ".html", thumbnail = "temp") 
+function intern_genWorkArticle(name = "HeadingName", desc = "temp desc.", filename = ".html", thumbnail = "temp", date="") 
 {
     
     return `
@@ -71,24 +72,26 @@ function GenerateArticle(keyname)
     var desc = WorkPieces[keyname].desc;
     var srcfile = WorkPieces[keyname].filename;
     var thumbnail = WorkPieces[keyname].thumbnail;
+    var date = WorkPieces[keyname].date;
 
-    return intern_genWorkArticle(name, desc, srcfile, thumbnail);
+    return intern_genWorkArticle(name, desc, srcfile, thumbnail, date);
 }
 function ReturnAllFilters(isOnIndex = false) 
 {
     var result = [ `
 <section class="features">
+    `+GenerateArticle("Forza Horizon 5")+`
     `+GenerateArticle("Pixelate")+`
     `+GenerateArticle("TV-World")+`
     `+GenerateArticle("Rose")+`
     `+GenerateArticle("Amaurosis")+`
     `+GenerateArticle("Mario Bros Arcade")+`
-    `+GenerateArticle("Pacman")+`
-    `+GenerateArticle("OpenGL1.1 Project")+`
+    <!--`+GenerateArticle("Pacman")+`-->
+    <!--`+GenerateArticle("OpenGL1.1 Project")+`-->
     `+GenerateArticle("DirectX11 Project")+`
     `+GenerateArticle("Staffsverse")+`
-    `+GenerateArticle("Arcadia The Claw")+`
-    `+GenerateArticle("Packing Panic")+`
+    <!--`+GenerateArticle("Arcadia The Claw")+`-->
+    <!--`+GenerateArticle("Packing Panic")+`-->
     
 
 </section>
@@ -103,15 +106,15 @@ function ReturnAllFilters(isOnIndex = false)
     `+GenerateArticle("Plugnet")+`
     */
 
-function ReturnMainFeatured() 
+function ReturnMainFeatured(uniqueID) 
 {
-
     const pieces = [ WorkPieces["Pixelate"], WorkPieces["TV-World"], WorkPieces["Rose"], WorkPieces["Amaurosis"]];
     var result = [ ` 
     
     
     
     <!-- Container for the image gallery -->
+    <div id ="`+uniqueID+`>
     <div class="container">
     <!-- Image text -->
       
@@ -159,7 +162,7 @@ function ReturnMainFeatured()
         </div>
       </div>
     </div> 
-
+  </div>
 
     
 `];
@@ -168,3 +171,31 @@ function ReturnMainFeatured()
 }
 
 
+
+
+function ReturnIndustryWork() 
+{
+    const pieces = [ WorkPieces["Forza Horizon 5"]];
+    var result = [ ` 
+    
+    <!-- Container for the image gallery -->
+    <div class="container">
+      <h3 style="margin:0; text-align:center" id="IndustryCaption">`+pieces[0].namealt1+`</h3>
+      
+      <img src="`+pieces[0].thumbnail+`" class="imgdemo">
+      </div>
+      
+      <div id="Industryimgdemocaption" class="imgdemocaption"> `+ pieces[0].desc+` 
+      <br>
+      <p1>(`+ pieces[0].date +`)</p1>
+      <br>
+      <a href="`+ pieces[0].filename +`" class ="small button" style="text-align:center;margin-top: 5px;">View</a>
+      </div>
+
+    </div>
+    
+    
+`];
+
+    return result;
+}
