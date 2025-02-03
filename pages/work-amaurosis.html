@@ -4,9 +4,11 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
+
+
 <html>
 	<head>
-		<title>Neil Punj - Packing Panic</title>
+		<title>Neil Punj - Amaurosis</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
@@ -14,6 +16,7 @@
 		<link rel="shortcut icon" type="image/x-icon" href="../images/favicon/favicon.ico" />
 	</head>
 	<body class="is-preload">
+		
 
 		<!-- Page Wrapper -->
 			<div id="page-wrapper">
@@ -48,7 +51,7 @@
 					<section id="wrapper">
 						<header>
 							<div class="inner">
-								<h2 style="text-align: center;">Packing Panic</h2>
+								<h2 style="text-align: center;">Amaurosis</h2>
 							</div>
 						</header>
 
@@ -58,7 +61,7 @@
 
 									<div class="box alt">
 										<div class="row gtr-uniform">
-											<div class="col-12"><span class="image fit"><img src="../images/work/packingpanic/packingpanic-preview1.jpg" name="edit-save" alt="" /></span></div>
+											<div class="col-12"><span class="image fit"><img src="../images/work/amaurosis/amaurosis-preview1.jpg" name="edit-save" alt="" /></span></div>
 										</div>
 										<ul class="pagination" style="text-align: center;">
 											<li><span id="backButtonSmall" onclick="IncrementPageCounter(false)" class="button small disabled">Prev</span></a></li>
@@ -69,14 +72,16 @@
 									</div>
 									<script>
 										window.onload = function() {
-   										 	InitPaginate(ThumbnailImgs);
-											changeBGImage("url('../../images/work/packingpanic/packingpanic-preview1.jpg')");
+											Init();
+											changeBGImage("url('../../images/work/amaurosis/amaurosis-preview1.jpg')")
+											InitPaginate(ThumbnailImgs);
 										};
 
 										const ThumbnailImgs = [
-											"../images/work/packingpanic/packingpanic-preview1.jpg",
-											"../images/work/packingpanic/packingpanic-preview2.jpg",
-											"../images/work/packingpanic/packingpanic-preview3.jpg",
+											"../images/work/amaurosis/amaurosis-preview1.jpg",
+											"../images/work/amaurosis/amaurosis-preview2.jpg",
+											"../images/work/amaurosis/amaurosis-preview3.jpg",
+											"../images/work/amaurosis/amaurosis-preview4.jpg"
 										]
 										
 										function changeBGImage(imgPath)
@@ -87,11 +92,12 @@
 
 
 									<ul class="actions fit">
-										<li><a href="https://accessdenied.itch.io/packing-panic" class="button fit">View Itch.io page</a></li>
-										<li><a href="https://www.youtube.com/embed/8HCaddn5lb0" class="button fit">View Video</a></li>
+										<!--<li><a href="https://github.com/hech11/" class="button fit">View Github page</a></li>-->
+										<li><a href="https://www.youtube.com/watch?v=YmQPLhNtK4Q" class="button fit">View Video</a></li>
 									</ul>
-									<p>Packing panic was a game created for a university game jam where we had to work in a team to create a game within four days. In the game, you must quickly drag and drop food items into your lunch box before time is up. Every time you complete a round, you are given less time. However, you are awarded one extra second if you can accurately place the fruit in the correct place and not just throw them in the box. The player loses if they run out of time. Ironically, the trick to getting the highest points and winning more levels is not to panic when playing this game.</p>
-									<p>This game was judged by several lectures at my University and a game developer from <a href="https://www.codemasters.com/">Codemasters</a>. This game won the competition.</p>
+									<p>Amaurosis was a university project where we simulated a small team of programmers to create this game. I was the main programming lead and oversaw development of nearly all systems. I was also responsible for shader work and architecturing the game.</p>
+									<p>Amaurosis is a first-person horror survival game where the player you must complete objectives while evading a monster that is roaming around and hunting you. Both player and monster are blind.
+									<p>For the player to see their surroundings they must make noise to emit noise waves around them. The player can make noise by walking and throwing objects. However while noise waves are used to help the player see they are also used by the monster to help locate the player. To win players must complete mini games and turn on generators to power the door to escape.</p></p>
 
 									<h3 style="text-align: center;"><u></u></h3>
 									<div class="content">
@@ -106,15 +112,23 @@
 												</thead>
 												<tbody>
 													<tr>
-														<td style = "text-align: center; vertical-align: middle;">Gameplay programmer</td>
+														<td style = "text-align: center; vertical-align: middle;">Programming lead</td>
 														<td>
-															<p style="margin:0;">Since I was the only programmer on the project and we did not have much time, I had to make sure we could quickly iterate the prototype and stick to our design. We tried many prototypes of different game ideas and eventually came up with Packing panic.</p>
+															<p style="margin:0;">One of my responsibilities as the lead programmer was to oversee the entire development lifecycle, including initial planning, technical requirements of the game and then the final build of the game. I had to create project plans, allocate resources effectively and set realistic milestones and deadlines.</p>
+															<br>
+															<p style="margin: 0;">I would communicate everyday with my team members to ensure progress was being made and make sure they can achieve the task. I would encourage agile methodologies to the team by continuously iterating on the development process. I had to make sure that the code was written cleanly and was maintainable while ahearing to the standards we agreed on.</p>
 														</td>
 													</tr>
 													<tr>
-														<td style = "text-align: center; vertical-align: middle;">Games designer</td>
+														<td style = "text-align: center; vertical-align: middle;">Optimisation</td>
 														<td>
-															<p style="margin:0;">We all agreed to contribute to the game's design as a team. While programming the game, I would add mechanics to see if it made it more fun or exciting. I suggested that the game be competitive and that the player quickly drags and drops items to score points.</p>
+															<p style="margin:0;">Towards the end of the project, I would go through the project and increase our frame rate. I would use Unity's profiling tools and RenderDoc to highlight potential performance bottlenecks within our project. The main bottlenecks was shader performance, so I had to rewrite my shaders to be more performant, this includes data packing rules and render ordering. I also made sure that the main unity scene was optimised too.</p>
+														</td>
+													</tr>
+													<tr>
+														<td style = "text-align: center; vertical-align: middle;">Github manager</td>
+														<td>
+															<p style="margin:0;">This project used Github as our main source control. My role was to make sure developers were on correct branches and make sure that there would be no merge conflicts. This mean't that I was responsible for reviewing pull requests, and I was one of the few people allowed to merge branches into the main branch.</p>
 														</td>
 													</tr>
 													<tr>
@@ -130,11 +144,11 @@
 									</div>
 
 
-
 									<h3><u>Some notes about the project</u></h3>
 									<ul>
 									<li>Made in Unity.</li>
-									<li>We used royalty-free assets such as art, music and sound effects from royalty-free sites. However, I did animate the title screen animation and a few sprites, such as the notepad were created by our team.</li>
+									<li>The team composed of only programmers.</li>
+									<li>We had 6 weeks to complete the project.</li>
 									</ul>
 
 									<ul class="actions fit">
@@ -156,7 +170,10 @@
 					</section>
 
 			</div>
+			
+			
 		<!-- Scripts -->
+			<script src="../assets/js/CustomAllWorkFilters.js"></script>
 			<script src="../assets/js/AutoPaginate.js"></script>
 			<script src="../assets/js/jquery.min.js"></script>
 			<script src="../assets/js/jquery.scrollex.min.js"></script>
